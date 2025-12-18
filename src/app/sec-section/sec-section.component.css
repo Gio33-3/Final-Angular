@@ -1,0 +1,46 @@
+.but-ori {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 0px 20px 0px;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+.container a {
+  text-decoration: none;
+}
+.container h1 {
+  font-size: 56px;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  margin: 0;
+  padding-top: 30px;
+}
+.container h4 {
+  font-size: 26px;
+  font-weight: 400;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  margin: 0;
+}
+
+.but-per {
+  border-radius: 20px;
+  padding: 15px;
+  background-color: #0071e3;
+  color: white;
+  border: none;
+  font-size: 17px;
+}
+
+.but-white {
+  border-radius: 20px;
+  padding: 15px;
+  background-color: white;
+  color: #0071e3;
+  border: 1px solid #0071e3;
+  font-size: 17px;
+}/*# sourceMappingURL=sec-section.component.css.map */

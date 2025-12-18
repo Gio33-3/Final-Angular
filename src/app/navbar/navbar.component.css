@@ -1,0 +1,55 @@
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+.apple-nav {
+  justify-content: space-around;
+}
+.apple-nav .nav-list {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.apple-nav button {
+  border: 0px !important;
+  background-color: transparent;
+}
+
+.mega-menu {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: #f5f5f5;
+}
+.mega-menu .container {
+  padding: 50px;
+  display: flex;
+}
+.mega-menu .container .mar-content {
+  padding-left: 50px;
+}
+.mega-menu p {
+  margin: 0;
+  color: grey;
+  font-size: 14px;
+}
+.mega-menu .a-pri {
+  text-decoration: none;
+  font-size: 24px;
+  color: #333336;
+  font-weight: bold;
+}
+.mega-menu .a-sec {
+  font-size: 12px;
+  color: #333336;
+  text-decoration: none;
+}
+.mega-menu .li-sec {
+  padding-top: 20px;
+}/*# sourceMappingURL=navbar.component.css.map */
