@@ -1,0 +1,10 @@
+.container-double {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.container {
+  width: 50%;
+  padding: 20px;
+}/*# sourceMappingURL=double-sec.component.css.map */
