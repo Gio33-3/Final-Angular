@@ -10,6 +10,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { FirstSectionComponent } from './first-section/first-section.component';
 import { SecSectionComponent } from './sec-section/sec-section.component';
+import { TherdSectionComponent } from './therd-section/therd-section.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { SecSectionComponent } from './sec-section/sec-section.component';
     AppComponent,
     NavbarComponent,
     FirstSectionComponent,
-    SecSectionComponent
+    SecSectionComponent,
+    TherdSectionComponent
   ],
   imports: [
     BrowserModule,

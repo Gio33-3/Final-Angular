@@ -8,6 +8,8 @@ ul {
 
 .apple-nav {
   justify-content: space-around;
+  position: fixed;
+  padding: 5px !important;
 }
 .apple-nav .nav-list {
   width: 100%;
@@ -19,6 +21,11 @@ ul {
 .apple-nav button {
   border: 0px !important;
   background-color: transparent;
+}
+.apple-nav .nav-link {
+  color: rgb(74, 74, 74);
+  text-decoration: none;
+  font-size: 12px;
 }
 
 .mega-menu {
@@ -52,4 +59,11 @@ ul {
 }
 .mega-menu .li-sec {
   padding-top: 20px;
+}
+
+@media (min-width: 1200px) {
+  .nav-list {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=navbar.component.css.map */

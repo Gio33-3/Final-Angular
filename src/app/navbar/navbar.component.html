@@ -1,27 +1,31 @@
 <mat-toolbar class="apple-nav">
-  <!--(mouseleave)="activeSection = null"-->
   <ul class="nav-list">
-    <button mat-icon-button class="">
-      <mat-icon>apple</mat-icon>
-    </button>
-    <li (mouseenter)="activeSection = 'store'">Store</li>
-    <li (mouseenter)="activeSection = 'mac'">Mac</li>
-    <li (mouseenter)="activeSection = 'ipad'">iPad</li>
-    <li (mouseenter)="activeSection = 'iphone'">iPhone</li>
-    <li (mouseenter)="activeSection = 'watch'">Watch</li>
-    <li (mouseenter)="activeSection = 'airpods'">AirPods</li>
-    <li (mouseenter)="activeSection = 'tv&casa'">TV & Casa</li>
-    <li (mouseenter)="activeSection = 'intrattenimento'">Intrattenimento</li>
-    <li (mouseenter)="activeSection = 'accessori'">iPad</li>
-    <li (mouseenter)="activeSection = 'supporto'">Store</li>
+    <li>
+      <a href="" class="nav-link">
+        <mat-icon>apple</mat-icon>
+      </a>
+    </li>
 
-    <button mat-icon-button class="">
-      <mat-icon>search</mat-icon>
-    </button>
+    <li (mouseenter)="activeSection = 'store'"><a href="" class="nav-link">Store</a></li>
+    <li (mouseenter)="activeSection = 'mac'"><a href="" class="nav-link">Mac</a></li>
+    <li (mouseenter)="activeSection = 'ipad'"><a href="" class="nav-link">iPad</a></li>
+    <li (mouseenter)="activeSection = 'iphone'"><a href="" class="nav-link">iPhone</a></li>
+    <li (mouseenter)="activeSection = 'watch'"><a href="" class="nav-link">Watch</a></li>
+    <li (mouseenter)="activeSection = 'airpods'"><a href="" class="nav-link">AirPods</a></li>
+    <li (mouseenter)="activeSection = 'tv&casa'"><a href="" class="nav-link">TV & Casa</a></li>
+    <li (mouseenter)="activeSection = 'intrattenimento'"><a href="" class="nav-link">Intrattenimento</a></li>
+    <li (mouseenter)="activeSection = 'supporto'"><a href="" class="nav-link">Supporto</a></li>
 
-    <button mat-icon-button class="">
-      <mat-icon>shopping_bag</mat-icon>
-    </button>
+    <li>
+      <a href="" class="nav-link">
+        <mat-icon>search</mat-icon>
+      </a>
+    </li>
+    <li>
+      <a href="" class="nav-link">
+        <mat-icon>shopping_bag</mat-icon>
+      </a>
+    </li>
   </ul>
 </mat-toolbar>
 
