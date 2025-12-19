@@ -8,21 +8,40 @@ p {
 }
 
 .container {
-  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.text-up,
+.container-img {
+  grid-area: 1 / 1;
+  height: 100%;
+  width: 100%;
 }
 
 .text-up {
-  position: absolute;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   width: 100%;
+  z-index: 2;
+  align-self: start;
+  padding-bottom: 20px;
+
 }
 
 .img-double {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .container-img {
-  width: 100%;
+  z-index: 1;
 }
 
 .container-but {
