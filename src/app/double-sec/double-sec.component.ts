@@ -9,6 +9,7 @@ export class DoubleSecComponent implements OnInit {
 
   @Input() titolo: string = '';
   @Input() sottotitolo: string = '';
+  @Input() sottotitolo2?: string = '';
   @Input() immagineSrc: string = '';
   @Input() mostraIconaApple: boolean = false;
 

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  activeSection: | 'store' |'mac'| 'ipad' | 'iphone' |'watch'| 'airpods' | 'tv&casa' | 'intrattenimento' | 'accessori' | 'supporto' | null = null;
+  activeSection: | 'store' | 'mac' | 'ipad' | 'iphone' | 'watch' | 'airpods' | 'tv&casa' | 'intrattenimento' | 'accessori' | 'supporto' | null = null;
   constructor() { }
 
   ngOnInit(): void {

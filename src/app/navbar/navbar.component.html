@@ -1,366 +1,397 @@
-<mat-toolbar class="apple-nav">
-  <ul class="nav-list">
-    <li>
-      <a href="" class="nav-link">
-        <mat-icon>apple</mat-icon>
-      </a>
-    </li>
+<div (mouseleave)="activeSection = null">
 
-    <li (mouseenter)="activeSection = 'store'"><a href="" class="nav-link">Store</a></li>
-    <li (mouseenter)="activeSection = 'mac'"><a href="" class="nav-link">Mac</a></li>
-    <li (mouseenter)="activeSection = 'ipad'"><a href="" class="nav-link">iPad</a></li>
-    <li (mouseenter)="activeSection = 'iphone'"><a href="" class="nav-link">iPhone</a></li>
-    <li (mouseenter)="activeSection = 'watch'"><a href="" class="nav-link">Watch</a></li>
-    <li (mouseenter)="activeSection = 'airpods'"><a href="" class="nav-link">AirPods</a></li>
-    <li (mouseenter)="activeSection = 'tv&casa'"><a href="" class="nav-link">TV & Casa</a></li>
-    <li (mouseenter)="activeSection = 'intrattenimento'"><a href="" class="nav-link">Intrattenimento</a></li>
-    <li (mouseenter)="activeSection = 'supporto'"><a href="" class="nav-link">Supporto</a></li>
+  <mat-toolbar class="apple-nav">
+    <ul class="nav-list">
+      <li>
+        <a href="" class="nav-link">
+          <mat-icon>apple</mat-icon>
+        </a>
+      </li>
 
-    <li>
-      <a href="" class="nav-link">
-        <mat-icon>search</mat-icon>
-      </a>
-    </li>
-    <li>
-      <a href="" class="nav-link">
-        <mat-icon>shopping_bag</mat-icon>
-      </a>
-    </li>
-  </ul>
-</mat-toolbar>
+      <li (mouseenter)="activeSection = 'store'"><a href="" class="nav-link">Store</a></li>
+      <li (mouseenter)="activeSection = 'mac'"><a href="" class="nav-link">Mac</a></li>
+      <li (mouseenter)="activeSection = 'ipad'"><a href="" class="nav-link">iPad</a></li>
+      <li (mouseenter)="activeSection = 'iphone'"><a href="" class="nav-link">iPhone</a></li>
+      <li (mouseenter)="activeSection = 'watch'"><a href="" class="nav-link">Watch</a></li>
+      <li (mouseenter)="activeSection = 'airpods'"><a href="" class="nav-link">AirPods</a></li>
+      <li (mouseenter)="activeSection = 'tv&casa'"><a href="" class="nav-link">TV & Casa</a></li>
+      <li (mouseenter)="activeSection = 'intrattenimento'"><a href="" class="nav-link">Intrattenimento</a></li>
+      <li (mouseenter)="activeSection = 'supporto'"><a href="" class="nav-link">Supporto</a></li>
 
-<div class="mega-menu" [class.is-active]="activeSection">
-  <div>
-    <div class="container" *ngIf="activeSection === 'store'">
-      <div class="mar-content">
-        <p>Acquista</p>
-        <ul>
-          <li><a class="a-pri" href="">Acquista i tuoi regali</a></li>
-          <li><a class="a-pri" href="">Mac</a></li>
-          <li><a class="a-pri" href="">iPad</a></li>
-          <li><a class="a-pri" href="">iPhone</a></li>
-          <li><a class="a-pri" href="">Apple Watch</a></li>
-          <li><a class="a-pri" href="">AirPods</a></li>
-          <li><a class="a-pri" href="">Accessori</a></li>
-        </ul>
+      <li>
+        <a href="" class="nav-link" (mouseenter)="activeSection = null">
+          <mat-icon>search</mat-icon>
+        </a>
+      </li>
+      <li>
+        <a href="" class="nav-link" (mouseenter)="activeSection = null">
+          <mat-icon>shopping_bag</mat-icon>
+        </a>
+      </li>
+    </ul>
+  </mat-toolbar>
+
+  <div class="mega-menu" [class.is-active]="activeSection">
+    <div>
+      <div class="container" *ngIf="activeSection === 'store'">
+        <div class="mar-content">
+          <p>Acquista</p>
+          <ul>
+            <li><a class="a-pri" href="">Acquista i tuoi regali</a></li>
+            <li><a class="a-pri" href="">Mac</a></li>
+            <li><a class="a-pri" href="">iPad</a></li>
+            <li><a class="a-pri" href="">iPhone</a></li>
+            <li><a class="a-pri" href="">Apple Watch</a></li>
+            <li><a class="a-pri" href="">AirPods</a></li>
+            <li><a class="a-pri" href="">Accessori</a></li>
+          </ul>
+        </div>
+
+        <div class="mar-content">
+          <p>Link rapidi</p>
+          <ul>
+            <li><a class="a-sec" href="">Trova uno store</a></li>
+            <li><a class="a-sec" href="">Stato degli ordini</a></li>
+            <li><a class="a-sec" href="">Apple Trade In</a></li>
+            <li><a class="a-sec" href="">Finanziamenti</a></li>
+          </ul>
+        </div>
+
+        <div class="mar-content">
+          <p>Acquista sugli store dedicati</p>
+          <ul>
+            <li><a class="a-sec" href="">Ricondizionati certificati</a></li>
+            <li><a class="a-sec" href="">Istruzione</a></li>
+            <li><a class="a-sec" href="">Business</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="mar-content">
-        <p>Link rapidi</p>
-        <ul>
-          <li><a class="a-sec" href="">Trova uno store</a></li>
-          <li><a class="a-sec" href="">Stato degli ordini</a></li>
-          <li><a class="a-sec" href="">Apple Trade In</a></li>
-          <li><a class="a-sec" href="">Finanziamenti</a></li>
-        </ul>
+      <div class="container" *ngIf="activeSection === 'mac'">
+        <div class="mar-content">
+          <p>Mac</p>
+          <ul>
+            <li><a class="a-pri" href="">Scopri la linea Mac</a></li>
+            <li><a class="a-pri" href="">MacBook Air</a></li>
+            <li><a class="a-pri" href="">MacBook Pro</a></li>
+            <li><a class="a-pri" href="">iManc</a></li>
+            <li><a class="a-pri" href="">Mac mini</a></li>
+            <li><a class="a-pri" href="">Mac Studio</a></li>
+            <li><a class="a-pri" href="">Mac Pro</a></li>
+            <li><a class="a-pri" href="">Display</a></li>
+            <li class="li-sec"><a class="a-sec" href="">Mac a confronto</a></li>
+            <li><a class="a-sec" href="">Passa da PC a Mac</a></li>
+          </ul>
+        </div>
+
+        <div class="mar-content">
+          <p>Acquista Mac</p>
+          <ul>
+            <li><a class="a-sec" href="">Acquista Mac</a></li>
+            <li><a class="a-sec" href="">Accessori Mac </a></li>
+            <li><a class="a-sec" href="">Apple Trade In</a></li>
+            <li><a class="a-sec" href="">Setup personale</a></li>
+          </ul>
+        </div>
+
+        <div class="mar-content">
+          <p>Altro per Mac</p>
+          <ul>
+            <li><a class="a-sec" href="">Supporto Mac</a></li>
+            <li><a class="a-sec" href="">AppleCare</a></li>
+            <li><a class="a-sec" href="">macOS Tahoe</a></li>
+            <li><a class="a-sec" href="">Apple Intellicence</a></li>
+            <li><a class="a-sec" href="">App made in Apple</a></li>
+            <li><a class="a-sec" href="">Con iPhone dà il meglio</a></li>
+            <li><a class="a-sec" href="">iCloud+</a></li>
+            <li><a class="a-sec" href="">Mac al lavoro</a></li>
+            <li><a class="a-sec" href="">Istruzione</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="mar-content">
-        <p>Acquista sugli store dedicati</p>
-        <ul>
-          <li><a class="a-sec" href="">Ricondizionati certificati</a></li>
-          <li><a class="a-sec" href="">Istruzione</a></li>
-          <li><a class="a-sec" href="">Business</a></li>
-        </ul>
+      <div class="container" *ngIf="activeSection === 'ipad'">
+        <div class="mar-content">
+          <p>iPad</p>
+          <ul>
+            <li><a class="a-pri" href="">Scopri la linea iPad</a></li>
+            <li><a class="a-pri" href="">iPad Pro</a></li>
+            <li><a class="a-pri" href="">iPad Air </a></li>
+            <li><a class="a-pri" href="">iPad</a></li>
+            <li><a class="a-pri" href="">iPad mini</a></li>
+            <li><a class="a-pri" href="">Apple Pencil</a></li>
+            <li><a class="a-pri" href="">Tastiere</a></li>
+            <li class="li-sec"><a class="a-sec" href="">iPad a confronto</a></li>
+          </ul>
+        </div>
+
+        <div class="mar-content">
+          <p>Acquista iPad</p>
+          <ul>
+            <li><a class="a-sec" href="">Acquista iPad</a></li>
+            <li><a class="a-sec" href="">Accessori iPad </a></li>
+            <li><a class="a-sec" href="">Apple Trade In</a></li>
+            <li><a class="a-sec" href="">Setup personale</a></li>
+          </ul>
+        </div>
+
+        <div class="mar-content">
+          <p>Altro per iPad</p>
+          <ul>
+            <li><a class="a-sec" href="">Supporto iPad</a></li>
+            <li><a class="a-sec" href="">AppleCare</a></li>
+            <li><a class="a-sec" href="">iPadOS 26</a></li>
+            <li><a class="a-sec" href="">Apple Intellicence</a></li>
+            <li><a class="a-sec" href="">Per le famiglie</a></li>
+            <li><a class="a-sec" href="">App made in Apple</a></li>
+            <li><a class="a-sec" href="">iCloud+</a></li>
+            <li><a class="a-sec" href="">Istruzione</a></li>
+          </ul>
+        </div>
       </div>
+
+      <div class="container" *ngIf="activeSection === 'iphone'">
+        <div class="mar-content">
+          <p>iPhone</p>
+          <ul>
+            <li><a class="a-pri" href="">Scopri la linea iphone</a></li>
+            <li><a class="a-pri" href="">iPhone 17 Pro</a></li>
+            <li><a class="a-pri" href="">iPhone Air</a></li>
+            <li><a class="a-pri" href="">iPhone 17</a></li>
+            <li><a class="a-pri" href="">iPhone 16</a></li>
+            <li><a class="a-pri" href="">iPhone 16e</a></li>
+            <li class="li-sec">
+              <a class="a-sec" href="">iPhone a confronto</a>
+            </li>
+            <li><a class="a-sec" href="">Passa ad iPhone</a></li>
+          </ul>
+        </div>
+
+        <div class="mar-content">
+          <p>Acquista iPhone</p>
+          <ul>
+            <li><a class="a-sec" href="">Trova uno store</a></li>
+            <li><a class="a-sec" href="">Stato degli ordini</a></li>
+            <li><a class="a-sec" href="">Apple Trade In</a></li>
+            <li><a class="a-sec" href="">Finanziamenti</a></li>
+          </ul>
+        </div>
+
+        <div class="mar-content">
+          <p>Acquista iPhone</p>
+          <ul>
+            <li><a class="a-sec" href="">Ricondizionati certificati</a></li>
+            <li><a class="a-sec" href="">Istruzione</a></li>
+            <li><a class="a-sec" href="">Business</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container" *ngIf="activeSection === 'watch'">
+        <div class="mar-content">
+          <p>Apple Watch</p>
+          <ul>
+            <li><a class="a-pri" href="">Scopri la linea Apple Watch</a></li>
+            <li><a class="a-pri" href="">Apple Watch Series 11</a></li>
+            <li><a class="a-pri" href="">Apple Watch SE 3</a></li>
+            <li><a class="a-pri" href="">Apple Watch Ultra 3</a></li>
+            <li><a class="a-pri" href="">Apple Watch Nike</a></li>
+            <li><a class="a-pri" href="">Apple Watch Hermès</a></li>
+            <li class="li-sec">
+              <a class="a-sec" href="">Apple Watch a confronto</a>
+            </li>
+            <li class="li-sec">
+              <a class="a-sec" href="">Perchè Apple Watch </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mar-content">
+          <p>Acquista Apple Watch</p>
+          <ul>
+            <li><a class="a-sec" href="">Acquista Apple Watch</a></li>
+            <li><a class="a-sec" href="">Cinturini Apple Watch</a></li>
+            <li><a class="a-sec" href="">Accessori Apple Watch</a></li>
+            <li><a class="a-sec" href="">Apple Trade In</a></li>
+            <li><a class="a-sec" href="">Setup Personale</a></li>
+          </ul>
+        </div>
+
+        <div class="mar-content">
+          <p>Altro per Apple Watch</p>
+          <ul>
+            <li><a class="a-sec" href="">Supporto Apple Watch</a></li>
+            <li><a class="a-sec" href="">AppleCare</a></li>
+            <li><a class="a-sec" href="">watchOS 26</a></li>
+            <li><a class="a-sec" href="">App made in Apple</a></li>
+            <li><a class="a-sec" href="">Apple Fitness+</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container" *ngIf="activeSection === 'airpods'">
+        <div class="mar-content">
+          <p>AirPods</p>
+          <ul>
+            <li><a class="a-pri" href="">Scopri la linea AirPods</a></li>
+            <li><a class="a-pri" href="">AirPods 4</a></li>
+            <li><a class="a-pri" href="">AirPods Pro 3</a></li>
+            <li><a class="a-pri" href="">AirPods Max</a></li>
+            <li class="li-sec">
+              <a class="a-sec" href="">AirPods a confronto</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mar-content">
+          <p>Acquista AirPods</p>
+          <ul>
+            <li><a class="a-sec" href="">Acquista AirPods</a></li>
+            <li><a class="a-sec" href="">Accessori AirPods</a></li>
+          </ul>
+        </div>
+
+        <div class="mar-content">
+          <p>Altro per AirPods</p>
+          <ul>
+            <li><a class="a-sec" href="">Supporto AirPods</a></li>
+            <li><a class="a-sec" href="">AppleCare</a></li>
+            <li><a class="a-sec" href="">Apple Music</a></li>
+            <li><a class="a-sec" href="">Apple Fitness+</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="container" *ngIf="activeSection === 'tv&casa'">
+        <div class="mar-content">
+          <p>TV & Casa</p>
+          <ul>
+            <li><a class="a-pri" href="">Scopri i prodotti TV & Casa</a></li>
+            <li><a class="a-pri" href="">Apple TV 4K</a></li>
+            <li><a class="a-pri" href="">HomePod</a></li>
+            <li><a class="a-pri" href="">HomePod mini</a></li>
+          </ul>
+        </div>
+
+        <div class="mar-content">
+          <p>Acquista TV & Casa</p>
+          <ul>
+            <li><a class="a-sec" href="">Acquista Apple TV 4K</a></li>
+            <li><a class="a-sec" href="">Acquista HomePod</a></li>
+            <li><a class="a-sec" href="">Acquista HomePod Mini</a></li>
+            <li><a class="a-sec" href="">Acquista Siri Remote</a></li>
+            <li><a class="a-sec" href="">Accessori TV & Casa</a></li>
+
+          </ul>
+        </div>
+
+        <div class="mar-content">
+          <p>Altro per TV & Casa</p>
+          <ul>
+            <li><a class="a-sec" href="">Supporto Apple TV</a></li>
+            <li><a class="a-sec" href="">AppleCare per Apple TV</a></li>
+            <li><a class="a-sec" href="">AppleCare per HomePod</a></li>
+            <li><a class="a-sec" href="">App Apple TV</a></li>
+            <li><a class="a-sec" href="">Apple TV</a></li>
+            <li><a class="a-sec" href="">App Casa</a></li>
+            <li><a class="a-sec" href="">Apple Music</a></li>
+            <li><a class="a-sec" href="">Siri</a></li>
+            <li><a class="a-sec" href="">AirPlay</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="container" *ngIf="activeSection === 'intrattenimento'">
+        <div class="mar-content">
+          <p>Intrattenimento</p>
+          <ul>
+            <li><a class="a-pri" href="">Scopri i servixi per l'intrattenimento </a></li>
+            <li><a class="a-pri" href="">Apple One</a></li>
+            <li><a class="a-pri" href="">Apple TV</a></li>
+            <li><a class="a-pri" href="">Apple Music</a></li>
+            <li><a class="a-pri" href="">Apple Arcade</a></li>
+            <li><a class="a-pri" href="">Apple Fitness+</a></li>
+            <li><a class="a-pri" href="">Apple Podcasts</a></li>
+            <li><a class="a-pri" href="">Apple Books</a></li>
+            <li><a class="a-pri" href="">App Store</a></li>
+
+          </ul>
+        </div>
+
+        <div class="mar-content">
+          <p>Supporto</p>
+          <ul>
+            <li><a class="a-sec" href="">Supporto Apple TV</a></li>
+            <li><a class="a-sec" href="">Supporto Apple Music</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container" *ngIf="activeSection === 'accessori'">
+        <div class="mar-content">
+          <p>Accessori per</p>
+          <ul>
+            <li><a class="a-pri" href="">Tutti gli accessori</a></li>
+            <li><a class="a-pri" href="">Mac</a></li>
+            <li><a class="a-pri" href="">iPad</a></li>
+            <li><a class="a-pri" href="">iPhone</a></li>
+            <li><a class="a-pri" href="">Apple Watch</a></li>
+            <li><a class="a-pri" href="">AirPods</a></li>
+            <li><a class="a-pri" href="">TV & Casa</a></li>
+          </ul>
+        </div>
+
+        <div class="mar-content">
+          <p>Linee di accessori</p>
+          <ul>
+            <li><a class="a-sec" href="">Creati da Apple</a></li>
+            <li><a class="a-sec" href="">Beats</a></li>
+            <li><a class="a-sec" href="">AirTag</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container" *ngIf="activeSection === 'supporto'">
+        <div class="mar-content">
+          <p>Supporto</p>
+          <ul>
+            <li><a class="a-pri" href="">Iphone</a></li>
+            <li><a class="a-pri" href="">Mac</a></li>
+            <li><a class="a-pri" href="">iPad</a></li>
+            <li><a class="a-pri" href="">Apple Watch</a></li>
+            <li><a class="a-pri" href="">AirPods</a></li>
+            <li><a class="a-pri" href="">Musica</a></li>
+            <li><a class="a-pri" href="">TV</a></li>
+            <li class="li-sec">
+              <a class="a-sec" href="">Supporto</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mar-content">
+          <p>Ricevi assistenza</p>
+          <ul>
+            <li><a class="a-sec" href="">Community</a></li>
+            <li><a class="a-sec" href="">Verifica la copertura</a></li>
+            <li><a class="a-sec" href="">Genius Bar</a></li>
+            <li><a class="a-sec" href="">Riparazioni</a></li>
+          </ul>
+        </div>
+
+        <div class="mar-content">
+          <p>Argomenti utili</p>
+          <ul>
+            <li><a class="a-sec" href="">Get AppleCare</a></li>
+            <li><a class="a-sec" href="">Apple Account e password</a></li>
+            <li><a class="a-sec" href="">Fatturazione e abbonamenti</a></li>
+            <li><a class="a-sec" href="">Accessibilità</a></li>
+          </ul>
+        </div>
+      </div>
+
+
     </div>
-
-    <div class="container" *ngIf="activeSection === 'mac'">
-      <div class="mar-content">
-        <p>Mac</p>
-        <ul>
-          <li><a class="a-pri" href="">Scopri la linea Mac</a></li>
-          <li><a class="a-pri" href="">MacBook Air</a></li>
-          <li><a class="a-pri" href="">MacBook Pro</a></li>
-          <li><a class="a-pri" href="">iManc</a></li>
-          <li><a class="a-pri" href="">Mac mini</a></li>
-          <li><a class="a-pri" href="">Mac Studio</a></li>
-          <li><a class="a-pri" href="">Mac Pro</a></li>
-          <li><a class="a-pri" href="">Display</a></li>
-          <li class="li-sec"><a class="a-sec" href="">Mac a confronto</a></li>
-          <li><a class="a-sec" href="">Passa da PC a Mac</a></li>
-        </ul>
-      </div>
-
-      <div class="mar-content">
-        <p>Acquista Mac</p>
-        <ul>
-          <li><a class="a-sec" href="">Acquista Mac</a></li>
-          <li><a class="a-sec" href="">Accessori Mac </a></li>
-          <li><a class="a-sec" href="">Apple Trade In</a></li>
-          <li><a class="a-sec" href="">Setup personale</a></li>
-        </ul>
-      </div>
-
-      <div class="mar-content">
-        <p>Altro per Mac</p>
-        <ul>
-          <li><a class="a-sec" href="">Supporto Mac</a></li>
-          <li><a class="a-sec" href="">AppleCare</a></li>
-          <li><a class="a-sec" href="">macOS Tahoe</a></li>
-          <li><a class="a-sec" href="">Apple Intellicence</a></li>
-          <li><a class="a-sec" href="">App made in Apple</a></li>
-          <li><a class="a-sec" href="">Con iPhone dà il meglio</a></li>
-          <li><a class="a-sec" href="">iCloud+</a></li>
-          <li><a class="a-sec" href="">Mac al lavoro</a></li>
-          <li><a class="a-sec" href="">Istruzione</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="container" *ngIf="activeSection === 'ipad'">
-      <div class="mar-content">
-        <p>iPad</p>
-        <ul>
-          <li><a class="a-pri" href="">Scopri la linea iPad</a></li>
-          <li><a class="a-pri" href="">iPad Pro</a></li>
-          <li><a class="a-pri" href="">iPad Air </a></li>
-          <li><a class="a-pri" href="">iPad</a></li>
-          <li><a class="a-pri" href="">iPad mini</a></li>
-          <li><a class="a-pri" href="">Apple Pencil</a></li>
-          <li><a class="a-pri" href="">Tastiere</a></li>
-          <li class="li-sec"><a class="a-sec" href="">iPad a confronto</a></li>
-        </ul>
-      </div>
-
-      <div class="mar-content">
-        <p>Acquista iPad</p>
-        <ul>
-          <li><a class="a-sec" href="">Acquista iPad</a></li>
-          <li><a class="a-sec" href="">Accessori iPad </a></li>
-          <li><a class="a-sec" href="">Apple Trade In</a></li>
-          <li><a class="a-sec" href="">Setup personale</a></li>
-        </ul>
-      </div>
-
-      <div class="mar-content">
-        <p>Altro per iPad</p>
-        <ul>
-          <li><a class="a-sec" href="">Supporto iPad</a></li>
-          <li><a class="a-sec" href="">AppleCare</a></li>
-          <li><a class="a-sec" href="">iPadOS 26</a></li>
-          <li><a class="a-sec" href="">Apple Intellicence</a></li>
-          <li><a class="a-sec" href="">Per le famiglie</a></li>
-          <li><a class="a-sec" href="">App made in Apple</a></li>
-          <li><a class="a-sec" href="">iCloud+</a></li>
-          <li><a class="a-sec" href="">Istruzione</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="container" *ngIf="activeSection === 'iphone'">
-      <div class="mar-content">
-        <p>iPhone</p>
-        <ul>
-          <li><a class="a-pri" href="">Scopri la linea iphone</a></li>
-          <li><a class="a-pri" href="">iPhone 17 Pro</a></li>
-          <li><a class="a-pri" href="">iPhone Air</a></li>
-          <li><a class="a-pri" href="">iPhone 17</a></li>
-          <li><a class="a-pri" href="">iPhone 16</a></li>
-          <li><a class="a-pri" href="">iPhone 16e</a></li>
-          <li class="li-sec">
-            <a class="a-sec" href="">iPhone a confronto</a>
-          </li>
-          <li><a class="a-sec" href="">Passa ad iPhone</a></li>
-        </ul>
-      </div>
-
-      <div class="mar-content">
-        <p>Acquista iPhone</p>
-        <ul>
-          <li><a class="a-sec" href="">Trova uno store</a></li>
-          <li><a class="a-sec" href="">Stato degli ordini</a></li>
-          <li><a class="a-sec" href="">Apple Trade In</a></li>
-          <li><a class="a-sec" href="">Finanziamenti</a></li>
-        </ul>
-      </div>
-
-      <div class="mar-content">
-        <p>Acquista iPhone</p>
-        <ul>
-          <li><a class="a-sec" href="">Ricondizionati certificati</a></li>
-          <li><a class="a-sec" href="">Istruzione</a></li>
-          <li><a class="a-sec" href="">Business</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="container" *ngIf="activeSection === 'watch'">
-      <div class="mar-content">
-        <p>Apple Watch</p>
-        <ul>
-          <li><a class="a-pri" href="">Scopri la linea Apple Watch</a></li>
-          <li><a class="a-pri" href="">Apple Watch Series 11</a></li>
-          <li><a class="a-pri" href="">Apple Watch SE 3</a></li>
-          <li><a class="a-pri" href="">Apple Watch Ultra 3</a></li>
-          <li><a class="a-pri" href="">Apple Watch Nike</a></li>
-          <li><a class="a-pri" href="">Apple Watch Hermès</a></li>
-          <li class="li-sec">
-            <a class="a-sec" href="">Apple Watch a confronto</a>
-          </li>
-          <li class="li-sec">
-            <a class="a-sec" href="">Perchè Apple Watch </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="mar-content">
-        <p>Acquista Apple Watch</p>
-        <ul>
-          <li><a class="a-sec" href="">Acquista Apple Watch</a></li>
-          <li><a class="a-sec" href="">Cinturini Apple Watch</a></li>
-          <li><a class="a-sec" href="">Accessori Apple Watch</a></li>
-          <li><a class="a-sec" href="">Apple Trade In</a></li>
-          <li><a class="a-sec" href="">Setup Personale</a></li>
-        </ul>
-      </div>
-
-      <div class="mar-content">
-        <p>Altro per Apple Watch</p>
-        <ul>
-          <li><a class="a-sec" href="">Supporto Apple Watch</a></li>
-          <li><a class="a-sec" href="">AppleCare</a></li>
-          <li><a class="a-sec" href="">watchOS 26</a></li>
-          <li><a class="a-sec" href="">App made in Apple</a></li>
-          <li><a class="a-sec" href="">Apple Fitness+</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="container" *ngIf="activeSection === 'airpods'">
-      <div class="mar-content">
-        <p>AirPods</p>
-        <ul>
-          <li><a class="a-pri" href="">Scopri la linea AirPods</a></li>
-          <li><a class="a-pri" href="">AirPods 4</a></li>
-          <li><a class="a-pri" href="">AirPods Pro 3</a></li>
-          <li><a class="a-pri" href="">AirPods Max</a></li>
-          <li class="li-sec">
-            <a class="a-sec" href="">AirPods a confronto</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="mar-content">
-        <p>Acquista AirPods</p>
-        <ul>
-          <li><a class="a-sec" href="">Acquista AirPods</a></li>
-          <li><a class="a-sec" href="">Accessori AirPods</a></li>
-        </ul>
-      </div>
-
-      <div class="mar-content">
-        <p>Altro per AirPods</p>
-        <ul>
-          <li><a class="a-sec" href="">Supporto AirPods</a></li>
-          <li><a class="a-sec" href="">AppleCare</a></li>
-          <li><a class="a-sec" href="">Apple Music</a></li>
-          <li><a class="a-sec" href="">Apple Fitness+</a></li>
-        </ul>
-      </div>
-    </div>
-
-
-    <div class="container" *ngIf="activeSection === 'tv&casa'">
-      <div class="mar-content">
-        <p>TV & Casa</p>
-        <ul>
-          <li><a class="a-pri" href="">Scopri i prodotti TV & Casa</a></li>
-          <li><a class="a-pri" href="">Apple TV 4K</a></li>
-          <li><a class="a-pri" href="">HomePod</a></li>
-          <li><a class="a-pri" href="">HomePod mini</a></li>
-        </ul>
-      </div>
-
-      <div class="mar-content">
-        <p>Link rapidi</p>
-        <ul>
-          <li><a class="a-sec" href="">Trova uno store</a></li>
-          <li><a class="a-sec" href="">Stato degli ordini</a></li>
-          <li><a class="a-sec" href="">Apple Trade In</a></li>
-          <li><a class="a-sec" href="">Finanziamenti</a></li>
-        </ul>
-      </div>
-
-      <div class="mar-content">
-        <p>Acquista sugli store dedicati</p>
-        <ul>
-          <li><a class="a-sec" href="">Ricondizionati certificati</a></li>
-          <li><a class="a-sec" href="">Istruzione</a></li>
-          <li><a class="a-sec" href="">Business</a></li>
-        </ul>
-      </div>
-    </div>
-
-
-    <div class="container" *ngIf="activeSection === 'watch'">
-      <div class="mar-content">
-        <p>Acquista</p>
-        <ul>
-          <li><a class="a-pri" href="">Acquista i tuoi regali</a></li>
-          <li><a class="a-pri" href="">Mac</a></li>
-          <li><a class="a-pri" href="">iPad</a></li>
-          <li><a class="a-pri" href="">iPhone</a></li>
-          <li><a class="a-pri" href="">Apple Watch</a></li>
-          <li><a class="a-pri" href="">AirPods</a></li>
-          <li><a class="a-pri" href="">Accessori</a></li>
-        </ul>
-      </div>
-
-      <div class="mar-content">
-        <p>Link rapidi</p>
-        <ul>
-          <li><a class="a-sec" href="">Trova uno store</a></li>
-          <li><a class="a-sec" href="">Stato degli ordini</a></li>
-          <li><a class="a-sec" href="">Apple Trade In</a></li>
-          <li><a class="a-sec" href="">Finanziamenti</a></li>
-        </ul>
-      </div>
-
-      <div class="mar-content">
-        <p>Acquista sugli store dedicati</p>
-        <ul>
-          <li><a class="a-sec" href="">Ricondizionati certificati</a></li>
-          <li><a class="a-sec" href="">Istruzione</a></li>
-          <li><a class="a-sec" href="">Business</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="container" *ngIf="activeSection === 'watch'">
-      <div class="mar-content">
-        <p>Acquista</p>
-        <ul>
-          <li><a class="a-pri" href="">Acquista i tuoi regali</a></li>
-          <li><a class="a-pri" href="">Mac</a></li>
-          <li><a class="a-pri" href="">iPad</a></li>
-          <li><a class="a-pri" href="">iPhone</a></li>
-          <li><a class="a-pri" href="">Apple Watch</a></li>
-          <li><a class="a-pri" href="">AirPods</a></li>
-          <li><a class="a-pri" href="">Accessori</a></li>
-        </ul>
-      </div>
-
-      <div class="mar-content">
-        <p>Link rapidi</p>
-        <ul>
-          <li><a class="a-sec" href="">Trova uno store</a></li>
-          <li><a class="a-sec" href="">Stato degli ordini</a></li>
-          <li><a class="a-sec" href="">Apple Trade In</a></li>
-          <li><a class="a-sec" href="">Finanziamenti</a></li>
-        </ul>
-      </div>
-
-      <div class="mar-content">
-        <p>Acquista sugli store dedicati</p>
-        <ul>
-          <li><a class="a-sec" href="">Ricondizionati certificati</a></li>
-          <li><a class="a-sec" href="">Istruzione</a></li>
-          <li><a class="a-sec" href="">Business</a></li>
-        </ul>
-      </div>
-    </div>
-
-
   </div>
 </div>
