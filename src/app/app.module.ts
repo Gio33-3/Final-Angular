@@ -12,7 +12,6 @@ import { FirstSectionComponent } from './first-section/first-section.component';
 import { SecSectionComponent } from './sec-section/sec-section.component';
 import { TherdSectionComponent } from './therd-section/therd-section.component';
 import { DoubleSecComponent } from './double-sec/double-sec.component';
-import { PreCarouselComponent } from './pre-carousel/pre-carousel.component';
 
 
 @NgModule({
@@ -23,7 +22,6 @@ import { PreCarouselComponent } from './pre-carousel/pre-carousel.component';
     SecSectionComponent,
     TherdSectionComponent,
     DoubleSecComponent,
-    PreCarouselComponent
   ],
   imports: [
     BrowserModule,
