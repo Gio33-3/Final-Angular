@@ -13,6 +13,8 @@ export class DoubleSecComponent implements OnInit {
   @Input() immagineSrc: string = '';
   @Input() mostraIconaApple: boolean = false;
 
+
+
   constructor() { }
 
   ngOnInit(): void {
