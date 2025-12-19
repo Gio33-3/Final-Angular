@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-double-sec',
@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./double-sec.component.scss']
 })
 export class DoubleSecComponent implements OnInit {
+
+  @Input() titolo: string = '';
+  @Input() sottotitolo: string = '';
+  @Input() immagineSrc: string = '';
+  @Input() mostraIconaApple: boolean = false;
 
   constructor() { }
 

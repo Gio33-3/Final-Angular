@@ -7,4 +7,10 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container-double {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */

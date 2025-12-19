@@ -1,27 +1,19 @@
-<div class="container-double">
-    <div class="container">
-        <div class="pad-top-title">
-            <h1>È tutto pronto per essere incartato?</h1>
-            <h4>Sei ancora in tempo per rendere le Feste davvero straordinarie.</h4>
-        </div>
-        <div class="container-but">
-            <a href="" mat-raised-button class="but-per">Acquista i regali</a>
-        </div>
-        <div>
-            <img src="../../assets/img-apple/4-img.jpg" class="img-first" alt="" />
-        </div>
+<div class="container">
+  <div class="text-up">
+    <div>
+      <h1>
+        <mat-icon *ngIf="mostraIconaApple" aria-hidden="false">apple</mat-icon>
+        {{ titolo }}
+      </h1>
+      <p>{{ sottotitolo }}</p>
     </div>
+    <div class="container-but">
+      <a href="" mat-raised-button class="but-per">Scopri di più</a>
+      <a href="" mat-raised-button class="but-white">Acquista</a>
+    </div>
+  </div>
 
-    <div class="container">
-        <div class="pad-top-title">
-            <h1>È tutto pronto per essere incartato?</h1>
-            <h4>Sei ancora in tempo per rendere le Feste davvero straordinarie.</h4>
-        </div>
-        <div class="container-but">
-            <a href="" mat-raised-button class="but-per">Acquista i regali</a>
-        </div>
-        <div>
-            <img src="../../assets/img-apple/first-img.jpg" class="img-first" alt="" />
-        </div>
-    </div>
+  <div class="container-img">
+    <img [src]="immagineSrc" class="img-double" alt="Immagine prodotto" />
+  </div>
 </div>

@@ -1,65 +1,65 @@
 .but-ori {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 15px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 0px 20px 0px;
 }
 
 .pad-top-title {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 .container {
-    width: 100%;
-    min-height: 580px;
-    background-color: #f5f5f5;
-    text-align: center;
+  width: 100%;
+  min-height: 580px;
+  background-color: #f5f5f5;
+  text-align: center;
 
-    a {
-        text-decoration: none;
-    }
+  a {
+    text-decoration: none;
+  }
 
-    h1 {
-        font-size: 56px;
-        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
-            "Arial", sans-serif;
-        margin: 0;
-        padding-top: 30px;
-    }
+  h1 {
+    font-size: 56px;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+      "Arial", sans-serif;
+    margin: 0;
+    padding-top: 30px;
+  }
 
-    h4 {
-        font-size: 26px;
-        font-weight: 400;
-        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
-            "Arial", sans-serif;
-        margin: 0;
-    }
+  h4 {
+    font-size: 26px;
+    font-weight: 400;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+      "Arial", sans-serif;
+    margin: 0;
+  }
 }
 
 .container-but {
-    padding: 10px 0px 20px 0px;
+  padding: 10px 0px 20px 0px;
 }
 
 .but-per {
-    border-radius: 20px;
-    padding: 15px;
-    background-color: #0071e3;
-    color: white;
-    border: none;
-    font-size: 17px;
-    display: inline-block;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: #0071e3;
+  color: white;
+  border: none;
+  font-size: 17px;
+  display: inline-block;
 }
 
 .but-white {
-    border-radius: 20px;
-    padding: 15px;
-    background-color: white;
-    color: #0071e3;
-    border: 1px solid #0071e3;
-    font-size: 17px;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: white;
+  color: #0071e3;
+  border: 1px solid #0071e3;
+  font-size: 17px;
 }
 
 .img-first {
-    width: 60%;
-    height: auto;
+  width: 100vh;
+  height: auto;
 }

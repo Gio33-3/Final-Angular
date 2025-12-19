@@ -1,10 +1,55 @@
-.container-double {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
+h1 {
+  margin-bottom: 0px;
+}
+
+p {
+  font-size: 21px;
+  margin: 5px 0px 10px 5px;
 }
 
 .container {
-  width: 50%;
-  padding: 20px;
+  position: relative;
+}
+
+.text-up {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.img-double {
+  width: 100%;
+}
+
+.container-img {
+  width: 100%;
+}
+
+.container-but {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.but-per {
+  border-radius: 20px;
+  padding: 15px;
+  background-color: #0071e3;
+  color: white;
+  border: none;
+  font-size: 17px;
+  display: inline-block;
+}
+
+.but-white {
+  border-radius: 20px;
+  padding: 15px;
+  background-color: white;
+  color: #0071e3;
+  border: 1px solid #0071e3;
+  font-size: 17px;
+}
+
+a {
+  text-decoration: none;
 }/*# sourceMappingURL=double-sec.component.css.map */

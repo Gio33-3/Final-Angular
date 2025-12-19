@@ -2,4 +2,40 @@
 <app-first-section></app-first-section>
 <app-sec-section></app-sec-section>
 <app-therd-section></app-therd-section>
-<app-double-sec></app-double-sec>
+
+<div class="container-double">
+  <app-double-sec
+    class="pad-double-sec"
+    titolo="iPad air"
+    sottotitolo="Adesso con i superpoteri del chip M3"
+    immagineSrc="../../assets/img-apple/4-img.jpg"
+  >
+  </app-double-sec>
+
+  <app-double-sec
+    class="pad-double-sec"
+    titolo="WATCH SERIES 11"
+    sottotitolo="Sempre al tuo polso"
+    immagineSrc="../../assets/img-apple/5-img.jpg"
+    [mostraIconaApple]="true"
+  >
+  </app-double-sec>
+</div>
+
+<div class="container-double">
+  <app-double-sec
+    class="pad-double-sec"
+    titolo="iPad"
+    sottotitolo="Ora con il velocissimo chip A16 e il doppio dello spazio di archiviazione base"
+    immagineSrc="../../assets/img-apple/6-img.jpg"
+  >
+  </app-double-sec>
+
+  <app-double-sec
+    class="pad-double-sec"
+    titolo="MacBook Air"
+    sottotitolo="Colore celeste. E prestazioni celestiali, con M4"
+    immagineSrc="../../assets/img-apple/7-img.jpg"
+  >
+  </app-double-sec>
+</div>
