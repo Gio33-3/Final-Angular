@@ -12,6 +12,8 @@ import { FirstSectionComponent } from './first-section/first-section.component';
 import { SecSectionComponent } from './sec-section/sec-section.component';
 import { TherdSectionComponent } from './therd-section/therd-section.component';
 import { DoubleSecComponent } from './double-sec/double-sec.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { SwiperModule } from 'swiper/angular';
 
 
 @NgModule({
@@ -22,13 +24,15 @@ import { DoubleSecComponent } from './double-sec/double-sec.component';
     SecSectionComponent,
     TherdSectionComponent,
     DoubleSecComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

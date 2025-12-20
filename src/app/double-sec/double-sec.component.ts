@@ -7,13 +7,13 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class DoubleSecComponent implements OnInit {
 
-  @Input() titolo: string = '';
-  @Input() sottotitolo: string = '';
-  @Input() sottotitolo2?: string = '';
-  @Input() immagineSrc: string = '';
-  @Input() mostraIconaApple: boolean = false;
+  @Input() title: string = '';
+  @Input() subtitle: string = '';
+  @Input() subtitle2?: string = '';
+  @Input() imgSrc: string = '';
+  @Input() lookIconApple: boolean = false;
   //style binding per l'allineamento del testo
-  @Input() allineamento: string = 'start'; // Può essere 'start', 'center' o 'end'
+  @Input() allign: string = 'start'; // Può essere 'start', 'center' o 'end'
   @Input() link: string = '';
   @Input() link2?: string = '';
 

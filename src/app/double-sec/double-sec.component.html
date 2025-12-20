@@ -1,12 +1,12 @@
 <div class="container">
     <!---- style binding per l'allineamento del testo --->
-    <div class=" text-up" [style.align-self]="allineamento">
+    <div class=" text-up" [style.align-self]="allign">
         <div>
             <h1>
-                <mat-icon *ngIf="mostraIconaApple" class="icon-apple">apple</mat-icon>
-                {{ titolo }}
+                <mat-icon *ngIf="lookIconApple" class="icon-apple">apple</mat-icon>
+                {{ title }}
             </h1>
-            <p>{{ sottotitolo }} <br> {{ sottotitolo2 }}</p>
+            <p>{{ subtitle }} <br> {{ subtitle2 }}</p>
 
         </div>
         <div class="container-but">
@@ -16,6 +16,6 @@
     </div>
 
     <div class="container-img">
-        <img [src]="immagineSrc" class="img-double" alt="Immagine prodotto" />
+        <img [src]="imgSrc" class="img-double" alt="Immagine prodotto" />
     </div>
 </div>
