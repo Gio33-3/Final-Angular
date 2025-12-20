@@ -12,8 +12,10 @@ export class DoubleSecComponent implements OnInit {
   @Input() sottotitolo2?: string = '';
   @Input() immagineSrc: string = '';
   @Input() mostraIconaApple: boolean = false;
-
-
+  //style binding per l'allineamento del testo
+  @Input() allineamento: string = 'start'; // Può essere 'start', 'center' o 'end'
+  @Input() link: string = '';
+  @Input() link2?: string = '';
 
   constructor() { }
 

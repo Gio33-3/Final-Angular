@@ -19,8 +19,11 @@ p {
 .text-up,
 .container-img {
   grid-area: 1/1;
-  height: 100%;
   width: 100%;
+}
+
+.container-img {
+  height: 100%;
 }
 
 .text-up {
@@ -29,8 +32,13 @@ p {
   text-align: center;
   width: 100%;
   z-index: 2;
-  align-self: start;
   padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.mat-icon {
+  font-size: 35px !important;
+  vertical-align: text-top;
 }
 
 .img-double {
@@ -38,10 +46,6 @@ p {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.container-img {
-  z-index: 1;
 }
 
 .container-but {
