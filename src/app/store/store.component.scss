@@ -1,33 +1,87 @@
-.store-container {
-    padding: 100px 5% 50px;
-    /* Margine per non finire sotto la navbar */
-    max-width: 1200px;
-    margin: 0 auto;
-}
+.product-slider {
+    display: flex; // Mette tutto su una riga
+    overflow-x: auto; // Attiva lo scorrimento orizzontale
+    gap: 30px; // Spazio tra le card
+    padding: 40px 20px;
+    scroll-behavior: smooth; // Scorrimento fluido
+    scroll-snap-type: x mandatory; // Effetto "calamita" (Snap)
 
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 30px;
+    // Nasconde la barra di scorrimento brutta (opzionale)
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .apple-card {
+    flex: 0 0 300px; // Impedisce alle card di rimpicciolirsi (300px larghezza fissa)
+    scroll-snap-align: start; // Punto dove la card si "aggancia" allo scorrimento
+
     background: #ffffff;
     border-radius: 20px;
     padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
-}
 
-.apple-card:hover {
-    transform: translateY(-10px);
-    /* Effetto al passaggio del mouse */
-}
+    &:hover {
+        transform: scale(1.02);
+    }
 
-.image-container img {
-    max-width: 100%;
-    height: 200px;
-    object-fit: contain;
-    /* Mantiene le proporzioni delle foto Apple */
+    .image-box {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .info {
+        margin-top: 10px;
+        text-align: start;
+
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+            margin-top: 5px;
+
+        }
+
+        .price {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            margin-top: 5px;
+
+        }
+
+        .btn-detail {
+            background: #0071e3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 500;
+
+            &:hover {
+                background: #0077ed;
+            }
+        }
+    }
 }
