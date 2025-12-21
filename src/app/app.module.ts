@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +17,8 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { SwiperModule } from 'swiper/angular';
 import { PreFooterComponent } from './pre-footer/pre-footer.component';
 import { FooterComponent } from './footer/footer.component';
+import { StoreComponent } from './store/store.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -29,6 +32,8 @@ import { FooterComponent } from './footer/footer.component';
     CarouselComponent,
     PreFooterComponent,
     FooterComponent,
+    StoreComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,7 +41,9 @@ import { FooterComponent } from './footer/footer.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    SwiperModule
+    SwiperModule,
+    //serve per comunicare con le chiavi API
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

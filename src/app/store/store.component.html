@@ -1,0 +1,15 @@
+<div class="product-grid">
+    <div *ngFor="let p of prodotti" class="apple-card">
+        <div class="image-box">
+            <img [src]="p.thumbnail" [alt]="p.title">
+        </div>
+
+        <div class="info">
+            <h3>{{ p.title }}</h3>
+            <p class="description">{{ p.description | slice:0:50 }}...</p>
+            <p class="price">${{ p.price }}</p>
+
+            <button class="btn-detail">Dettagli</button>
+        </div>
+    </div>
+</div>
