@@ -1,0 +1,57 @@
+.apple-footer-notes {
+  background-color: #f5f5f7;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  color: #6e6e73;
+  font-size: 12px;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+}
+.apple-footer-notes h4 {
+  color: black;
+}
+.apple-footer-notes a {
+  text-decoration: none;
+  color: #6e6e73;
+}
+.apple-footer-notes li {
+  list-style: none;
+}
+.apple-footer-notes .notes-container {
+  max-width: 1024px;
+  padding: 0 22px;
+}
+.apple-footer-notes .product-list {
+  margin-bottom: 15px;
+  font-weight: 500;
+  display: flex;
+  gap: 20px;
+}
+.apple-footer-notes .product-list p {
+  margin: 0;
+}
+.apple-footer-notes .notes-divider {
+  border: 0;
+  border-top: 1px solid #d2d2d7;
+  margin: 15px 0;
+}
+.apple-footer-notes .numbered-notes {
+  padding-left: 0px;
+  margin-bottom: 20px;
+}
+.apple-footer-notes .numbered-notes li {
+  margin-bottom: 10px;
+}
+.apple-footer-notes .general-notes p {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 1440px) {
+  .apple-footer-notes {
+    font-size: 11px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    width: 100%;
+  }
+}/*# sourceMappingURL=pre-footer.component.css.map */

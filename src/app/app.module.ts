@@ -14,6 +14,8 @@ import { TherdSectionComponent } from './therd-section/therd-section.component';
 import { DoubleSecComponent } from './double-sec/double-sec.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { SwiperModule } from 'swiper/angular';
+import { PreFooterComponent } from './pre-footer/pre-footer.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -25,6 +27,8 @@ import { SwiperModule } from 'swiper/angular';
     TherdSectionComponent,
     DoubleSecComponent,
     CarouselComponent,
+    PreFooterComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

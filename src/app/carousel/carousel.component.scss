@@ -10,19 +10,19 @@
 }
 
 .swiper-pagination {
-    bottom: 20px !important; // Aumenta questo valore per tirarli più su
+    bottom: 20px !important;
 }
 
 .swiper-pagination-bullet {
-    background: #555555 !important; // Grigio scuro
-    opacity: 0.6 !important; // Leggermente trasparente
-    width: 10px; // Puoi anche cambiare dimensione
+    background: #555555 !important;
+    opacity: 0.6 !important;
+    width: 10px;
     height: 10px;
 }
 
 .swiper-pagination-bullet-active {
-    background: #000000 !important; // Bianco acceso (o usa #0071e3 per l'azzurro Apple)
-    opacity: 1 !important; // Opacità massima
+    background: #000000 !important;
+    opacity: 1 !important
 }
 
 .slide-content {
