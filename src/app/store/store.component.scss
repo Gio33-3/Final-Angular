@@ -1,87 +1,77 @@
 .product-slider {
-    display: flex; // Mette tutto su una riga
-    overflow-x: auto; // Attiva lo scorrimento orizzontale
-    gap: 30px; // Spazio tra le card
-    padding: 40px 20px;
-    scroll-behavior: smooth; // Scorrimento fluido
-    scroll-snap-type: x mandatory; // Effetto "calamita" (Snap)
-
-    // Nasconde la barra di scorrimento brutta (opzionale)
-    &::-webkit-scrollbar {
-        display: none;
-    }
-
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  display: flex;
+  overflow-x: auto;
+  gap: 30px;
+  padding: 40px 20px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  overflow-y: auto;
+  border: 1px solid #ccc;
 }
 
 .apple-card {
-    flex: 0 0 300px; // Impedisce alle card di rimpicciolirsi (300px larghezza fissa)
-    scroll-snap-align: start; // Punto dove la card si "aggancia" allo scorrimento
+  flex: 0 0 300px; // Impedisce alle card di rimpicciolirsi
+  scroll-snap-align: start; // Punto dove la card si "aggancia" allo scorrimento
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
 
-    background: #ffffff;
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.02);
+  }
 
-    &:hover {
-        transform: scale(1.02);
+  .image-box {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .info {
+    margin-top: 10px;
+    text-align: start;
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 10px;
     }
 
-    .image-box {
-        width: 100%;
-        height: 200px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-        }
+    .description {
+      color: #666;
+      font-size: 0.9rem;
+      margin-bottom: 5px;
+      margin-top: 5px;
     }
 
-    .info {
-        margin-top: 10px;
-        text-align: start;
-
-
-        h3 {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-
-        .description {
-            color: #666;
-            font-size: 0.9rem;
-            margin-bottom: 5px;
-            margin-top: 5px;
-
-        }
-
-        .price {
-            font-weight: bold;
-            font-size: 1.1rem;
-            margin-bottom: 5px;
-            margin-top: 5px;
-
-        }
-
-        .btn-detail {
-            background: #0071e3;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 20px;
-            cursor: pointer;
-            font-weight: 500;
-
-            &:hover {
-                background: #0077ed;
-            }
-        }
+    .price {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+      margin-top: 5px;
     }
+
+    .btn-detail {
+      background: #0071e3;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: 500;
+
+      &:hover {
+        background: #0077ed;
+      }
+    }
+  }
 }
