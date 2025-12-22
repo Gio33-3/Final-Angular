@@ -1,14 +1,12 @@
 <div class="product-slider">
-    <div *ngFor="let p of prodotti" class="apple-card">
-
-
-        <div class="info">
-            <h3>{{ p.title }}</h3>
-            <p class="description">{{ p.description | slice:0:50 }}...</p>
-            <p class="price">${{ p.price }}</p>
-        </div>
-        <div class="image-box">
-            <img [src]="p.thumbnail" [alt]="p.title">
-        </div>
+  <div *ngFor="let p of products" class="apple-card">
+    <div class="info">
+      <h3>{{ p.title }}</h3>
+      <p class="description">{{ p.description | slice : 0 : 50 }}...</p>
+      <p class="price">${{ p.price }}</p>
     </div>
+    <div class="image-box">
+      <img [src]="p.thumbnail" [alt]="p.title" />
+    </div>
+  </div>
 </div>

@@ -13,6 +13,7 @@
   width: 100%;
   background-color: #f5f5f5;
   text-align: center;
+  margin-bottom: 10px;
 }
 .container a {
   text-decoration: none;
@@ -36,7 +37,7 @@
 
 .but-per {
   border-radius: 20px;
-  padding: 15px;
+  padding: 10px;
   background-color: #0071e3;
   color: white;
   border: none;
@@ -46,11 +47,16 @@
 
 .but-white {
   border-radius: 20px;
-  padding: 15px;
-  background-color: white;
+  padding: 10px;
+  background-color: transparent;
   color: #0071e3;
   border: 1px solid #0071e3;
   font-size: 17px;
+  align-self: center;
+}
+.but-white:hover {
+  background-color: #0071e3;
+  color: white;
 }
 
 .img-first {
