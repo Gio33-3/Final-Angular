@@ -19,6 +19,7 @@ import { PreFooterComponent } from './pre-footer/pre-footer.component';
 import { FooterComponent } from './footer/footer.component';
 import { StoreComponent } from './store/store.component';
 import { HomeComponent } from './home/home.component';
+import { IntroStoreComponent } from './intro-store/intro-store.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { HomeComponent } from './home/home.component';
     FooterComponent,
     StoreComponent,
     HomeComponent,
+    IntroStoreComponent,
   ],
   imports: [
     BrowserModule,
