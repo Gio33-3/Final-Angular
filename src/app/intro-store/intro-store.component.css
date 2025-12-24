@@ -1,14 +1,19 @@
 .container {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+}
+
+.cont-card {
+  width: 60px;
+  height: 80%;
 }
 
 .text-pre-card {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  text-align: center;
+  text-align: end;
   padding: 50px;
   align-items: center;
   width: 100%;
@@ -33,4 +38,25 @@
 .a-end {
   text-align: end;
   color: #0066cc;
+  text-decoration: none;
+}
+
+mat-card-header {
+  display: inline;
+  text-align: center;
+}
+mat-card-header a {
+  text-decoration: none;
+  color: black;
+}
+mat-card-header a:hover {
+  text-decoration: underline;
+}
+mat-card-header mat-card-title {
+  margin-bottom: 0px;
+  font-size: 14px;
+}
+
+mat-card {
+  box-shadow: none !important;
 }/*# sourceMappingURL=intro-store.component.css.map */

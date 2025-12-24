@@ -1,14 +1,20 @@
 .container {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+}
+
+.cont-card {
+  width: 60px;
+  height: 80%;
+
 }
 
 .text-pre-card {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  text-align: center;
+  text-align: end;
   padding: 50px;
   align-items: center;
   width: 100%;
@@ -23,14 +29,12 @@
   letter-spacing: -2px;
 
   /* Creazione della sfumatura */
-  background: linear-gradient(
-    to right,
-    #4a8df3 0%,
-    #4a8df3 30%,
-    #a2717a 50%,
-    #f07e4d 70%,
-    #f07e4d 100%
-  );
+  background: linear-gradient(to right,
+      #4a8df3 0%,
+      #4a8df3 30%,
+      #a2717a 50%,
+      #f07e4d 70%,
+      #f07e4d 100%);
 
   /* Applica la sfumatura solo al testo */
   -webkit-background-clip: text;
@@ -44,4 +48,31 @@
 .a-end {
   text-align: end;
   color: #0066cc;
+  text-decoration: none;
+}
+
+mat-card-header {
+
+  display: inline;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  mat-card-title {
+    margin-bottom: 0px;
+    font-size: 14px;
+  }
+
+
+}
+
+mat-card {
+  box-shadow: none !important;
 }

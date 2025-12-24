@@ -20,7 +20,8 @@ import { FooterComponent } from './footer/footer.component';
 import { StoreComponent } from './store/store.component';
 import { HomeComponent } from './home/home.component';
 import { IntroStoreComponent } from './intro-store/intro-store.component';
-
+import { MatCardModule } from '@angular/material/card';
+import { CarouselModule } from 'primeng/carousel';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,8 @@ import { IntroStoreComponent } from './intro-store/intro-store.component';
     MatToolbarModule,
     MatIconModule,
     SwiperModule,
+    MatCardModule,
+    CarouselModule,
     //serve per comunicare con le chiavi API
     HttpClientModule
   ],

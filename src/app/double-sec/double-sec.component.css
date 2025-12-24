@@ -82,4 +82,19 @@ p {
 
 a {
   text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+  .text-up p {
+    font-size: 18px;
+    margin: 5px 15px 10px 15px;
+  }
+  .but-per,
+  .but-white {
+    font-size: 15px;
+    padding: 10px;
+  }
+  .container {
+    height: 70vh;
+  }
 }/*# sourceMappingURL=double-sec.component.css.map */
