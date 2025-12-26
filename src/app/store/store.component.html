@@ -1,14 +1,34 @@
 <app-intro-store></app-intro-store>
 
-<div class="product-slider">
-  <div *ngFor="let p of products" class="apple-card">
-    <div class="info">
-      <h3>{{ p.title }}</h3>
-      <p class="description">{{ p.description | slice : 0 : 50 }}...</p>
-      <p class="price">${{ p.price }}</p>
+<div class="store-container">
+  <p><span class="gradient-text">Le novità.</span>Anche la meraviglia è in regalo</p>
+
+  <div class="product-slider">
+    <div *ngFor="let p of iphones" class="apple-card">
+      <div class="info">
+        <h3>{{ p.title }}</h3>
+        <p class="description">{{ p.description | slice : 0 : 50 }}...</p>
+        <p class="price">${{ p.price }}</p>
+      </div>
+      <div class="image-box">
+        <img [src]="p.thumbnail" [alt]="p.title" />
+      </div>
     </div>
-    <div class="image-box">
-      <img [src]="p.thumbnail" [alt]="p.title" />
+  </div>
+
+  <p>Apple vende anche Samsung... <span class="gradient-text">Assurdo ma vero.</span></p>
+
+  <div class="product-slider">
+
+    <div *ngFor="let p of samsungs" class="apple-card">
+      <div class="info">
+        <h3>{{ p.title }}</h3>
+        <p class="description">{{ p.description | slice : 0 : 50 }}...</p>
+        <p class="price">${{ p.price }}</p>
+      </div>
+      <div class="image-box">
+        <img [src]="p.thumbnail" [alt]="p.title" />
+      </div>
     </div>
   </div>
 </div>

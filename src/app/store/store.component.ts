@@ -7,13 +7,19 @@ import { AppleService } from '../services/apple.service';
   styleUrls: ['./store.component.scss']
 })
 export class StoreComponent implements OnInit {
-  products: any[] = [];
+  iphones: any[] = [];
+  samsungs: any[] = [];
 
   constructor(private service: AppleService) { }
 
   ngOnInit() {
-    this.service.getProducts().subscribe((data) => {
-      this.products = data.products;
+    this.service.getIphones().subscribe((data) => {
+      this.iphones = data.products;
+    });
+
+
+    this.service.getSamsungs().subscribe((data) => {
+      this.samsungs = data.products;
     });
   }
 }

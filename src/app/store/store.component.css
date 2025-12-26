@@ -1,3 +1,7 @@
+.store-container {
+  padding-left: 5%;
+}
+
 .product-slider {
   display: flex;
   overflow-x: auto;
@@ -42,7 +46,7 @@
   margin-bottom: 10px;
 }
 .apple-card .info .description {
-  color: #666;
+  color: #000000;
   font-size: 0.9rem;
   margin-bottom: 5px;
   margin-top: 5px;
@@ -52,6 +56,7 @@
   font-size: 1.1rem;
   margin-bottom: 5px;
   margin-top: 5px;
+  color: red;
 }
 .apple-card .info .btn-detail {
   background: #0071e3;
@@ -64,4 +69,23 @@
 }
 .apple-card .info .btn-detail:hover {
   background: #0077ed;
+}
+
+p {
+  font-size: 28px;
+  color: #666;
+  font-weight: bold;
+}
+
+.gradient-text {
+  font-weight: 700;
+  margin-right: 5px;
+  /* Creazione della sfumatura */
+  background: linear-gradient(to right, #4a8df3 0%, #4a8df3 30%, #a2717a 50%, #f07e4d 70%, #f07e4d 100%);
+  /* Applica la sfumatura solo al testo */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
 }/*# sourceMappingURL=store.component.css.map */

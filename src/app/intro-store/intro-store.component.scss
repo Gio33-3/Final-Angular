@@ -4,6 +4,13 @@
   justify-content: space-around;
 }
 
+.container-prod {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px 30px;
+
+}
+
 .cont-card {
   width: 60px;
   height: 80%;
@@ -21,12 +28,8 @@
 }
 
 .gradient-text {
-  /* Font simile a quello Apple/Google */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif;
   font-size: 80px;
   font-weight: 700;
-  letter-spacing: -2px;
 
   /* Creazione della sfumatura */
   background: linear-gradient(to right,
