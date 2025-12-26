@@ -69,6 +69,55 @@ ul {
   padding-top: 20px;
 }
 
+.search-expansion {
+  background-color: white;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  animation: slideDown 0.3s ease-out;
+  padding-top: 100px;
+}
+.search-expansion .search-content {
+  width: 80%;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+.search-expansion .search-content input {
+  background: transparent;
+  border: none;
+  color: black;
+  font-size: 1.2rem;
+  width: 100%;
+  margin: 0 15px;
+  outline: none;
+}
+.search-expansion .search-content .nav-link,
+.search-expansion .search-content mat-icon,
+.search-expansion .search-content .close-icon {
+  cursor: pointer;
+}
+.search-expansion .search-content .nav-link:hover,
+.search-expansion .search-content mat-icon:hover,
+.search-expansion .search-content .close-icon:hover {
+  opacity: 1;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 @media (min-width: 1200px) {
   .nav-list {
     max-width: 1000px;

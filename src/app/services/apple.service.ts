@@ -18,4 +18,9 @@ export class AppleService {
   getSamsungs(): Observable<any> {
     return this.http.get(`${this.url}/search?q=samsung`);
   }
+
+  // Ottieni quello che vuoi tramite ricerca, cerca direttamente nel api
+  searchProducts(query: string): Observable<any> {
+    return this.http.get(`${this.url}/search?q=${query}`);// query la mettiamo nella ricerca
+  }
 }

@@ -81,6 +81,62 @@ ul {
 
 
 
+.search-expansion {
+  background-color: white;
+  backdrop-filter: blur(20px);
+  height: 60px; // La "linea sotto"
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); // Sottile linea di divisione
+  animation: slideDown 0.3s ease-out;
+  padding-top: 100px;
+
+
+
+  .search-content {
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    color: black;
+
+    input {
+      background: transparent;
+      border: none;
+      color: black;
+      font-size: 1.2rem;
+      width: 100%;
+      margin: 0 15px;
+      outline: none;
+    }
+
+    .nav-link,
+    mat-icon,
+    .close-icon {
+      cursor: pointer;
+
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
 
 @media (min-width: 1200px) {
   .nav-list {

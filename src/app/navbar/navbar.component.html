@@ -1,4 +1,4 @@
-<div (mouseleave)="activeSection = null">
+<div (mouseleave)="activeSection = null; isSearchOpen = false">
 
   <mat-toolbar class="apple-nav">
     <ul class="nav-list">
@@ -19,17 +19,29 @@
       <li (mouseenter)="activeSection = 'supporto'"><a href="" class="nav-link">Supporto</a></li>
 
       <li>
-        <a href="" class="nav-link" (mouseenter)="activeSection = null">
+        <a class="nav-link" (click)="toggleSearch()" (mouseenter)="activeSection = null">
           <mat-icon>search</mat-icon>
         </a>
       </li>
+
       <li>
         <a href="" class="nav-link" (mouseenter)="activeSection = null">
           <mat-icon>shopping_bag</mat-icon>
         </a>
       </li>
     </ul>
+
   </mat-toolbar>
+
+  <div class="search-expansion" *ngIf="isSearchOpen">
+    <div class="search-content">
+      <mat-icon>search</mat-icon>
+      <input type="text" placeholder="Cerca su apple.com" (keyup.enter)="doSearch($event)" #searchInput
+        autocomplete="off">
+      <mat-icon class="close-icon" (click)="isSearchOpen = false">close</mat-icon>
+    </div>
+  </div>
+
 
   <div class="mega-menu" [class.is-active]="activeSection">
     <div>

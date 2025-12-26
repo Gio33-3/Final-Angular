@@ -1,6 +1,32 @@
 <app-intro-store></app-intro-store>
 
-<div class="store-container">
+<!-- Controllo se la ricerca è maggiore di 0, cioè ha trovato risultati -->
+<div *ngIf="searchResults.length > 0">
+  <h2>Risultati della ricerca</h2>
+  <div class="product-slider">
+    <div *ngFor="let p of searchResults" class="apple-card">
+      <div class="info">
+        <h3>{{ p.title }}</h3>
+        <p class="description">{{ p.description | slice : 0 : 50 }}...</p>
+        <p class="price">${{ p.price }}</p>
+      </div>
+      <div class="image-box">
+        <img [src]="p.thumbnail" [alt]="p.title" />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Controllo se la ricerca è uguale a 0, cioè vuota, non ha risultati, ti mostra quelli di default -->
+<div *ngIf="searchResults.length === 0" class="store-container">
+
+  <!-- Quando la ricerca non va a buon fine i risultati non trovati -->
+  <div class="not-found-banner" *ngIf="hasSearched">
+    <mat-icon>search_off</mat-icon>
+    <p>Nessun risultato per la tua ricerca. Guarda i nostri consigli:</p>
+  </div>
+
   <p><span class="gradient-text">Le novità.</span>Anche la meraviglia è in regalo</p>
 
   <div class="product-slider">
