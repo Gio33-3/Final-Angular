@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-pre-footer',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pre-footer.component.scss']
 })
 export class PreFooterComponent implements OnInit {
+
+
+  @Input() litext?: string = '';
+  @Input() litext2?: string = '';
 
   constructor() { }
 

@@ -23,4 +23,13 @@ export class AppleService {
   searchProducts(query: string): Observable<any> {
     return this.http.get(`${this.url}/search?q=${query}`);// query la mettiamo nella ricerca
   }
+
+  // Ottieni prodotto per ID per il dettaglio del prodotto, detailpage
+  getProductById(id: string | number) { //mettiamo stringa o number perche poi nel product detail
+    // lo mettiamo come stringa id, quindi cosi evitiamo errori, prende sia id come stringa che come number, riutilizzabili
+    // DummyJSON vuole l'URL: https://dummyjson.com/products/1, 
+    // qui è products perche lo va a prendere nell'api
+    // mentre io ho store
+    return this.http.get(`https://dummyjson.com/products/${id}`);
+  }
 }
