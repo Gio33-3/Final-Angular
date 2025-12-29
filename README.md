@@ -1,27 +1,50 @@
-# FinalAngular
+# Apple Store Clone - Angular Final Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.11.
+This web application is an **Angular**-based project designed to emulate the user experience and aesthetic of the official Apple website. The application dynamically manages a product catalog by consuming external APIs.
 
-## Development server
+## 🚀 Key Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+* **Apple-Style Navbar**: An interactive menu featuring a "Mega Menu" that appears on hover, mirroring the original design.
+* **Advanced Search Bar**: A fixed search bar implementation with product filtering logic using query parameters.
+* **Dynamic Catalog**: Real-time data retrieval using the [DummyJSON](https://dummyjson.com/) API.
+* **Product Details**: Dedicated pages for each item with dynamic routing management (`/store/:id`).
+* **Responsive Design**: Fully optimized interface for various screen resolutions using custom SCSS and Angular Material.
 
-## Code scaffolding
+## 🛠️ Tech Stack
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* **Framework**: Angular 13
+* **UI Components**: Angular Material (Icons, Cards, Toolbar)
+* **Styling**: SCSS (SASS) utilizing Flexbox and Grid layouts.
+* **Data Management**: REST API integration via HttpClient Module.
 
-## Build
+## 📋 Prerequisites
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Before running the project, ensure you have the following installed:
+* [Node.js](https://nodejs.org/) (Version 18 or higher)
+* [Angular CLI](https://angular.io/cli) (`npm install -g @angular/cli`)
 
-## Running unit tests
+## ⚙️ Installation and Setup
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/Gio33-3/Final-Angular.git](https://github.com/Gio33-3/Final-Angular.git)
+    ```
 
-## Running end-to-end tests
+2.  **Navigate to the project directory:**
+    ```bash
+    cd Final-Angular
+    ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-## Further help
+4.  **Run the application locally:**
+    ```bash
+    ng serve
+    ```
+    Once the server is running, the application will be accessible at `http://localhost:4200/`.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+---
+**Developed by:** Gioele Guarnaccia
