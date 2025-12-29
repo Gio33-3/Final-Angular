@@ -1,1 +1,29 @@
-/*# sourceMappingURL=product-detail.component.css.map */
+.product-slider {
+  padding-top: 50px;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.star {
+  vertical-align: middle;
+  margin-bottom: 5px;
+  color: gold;
+}
+.star p {
+  vertical-align: middle;
+}
+
+.description {
+  color: #000000;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  color: red;
+}/*# sourceMappingURL=product-detail.component.css.map */

@@ -1,8 +1,12 @@
 <div class="product-slider">
     <div class="info">
-        <h3>{{ product.title }}</h3>
-        <p class="description">{{ product.description }}...</p>
+        <h1>{{ product.title }}</h1>
+        <p class="description">{{ product.description }}</p>
         <p class="price">${{ product.price }}</p>
+        <div>
+            <p><mat-icon class="star">stars</mat-icon> <strong>{{ product.rating }}</strong> Valutations</p>
+        </div>
+
     </div>
     <div class="image-box">
         <img [src]="product.thumbnail" [alt]="product.title" />

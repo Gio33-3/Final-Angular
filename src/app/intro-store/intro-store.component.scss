@@ -52,6 +52,10 @@
   text-align: end;
   color: #0066cc;
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 mat-card-header {

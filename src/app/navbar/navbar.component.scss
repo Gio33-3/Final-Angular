@@ -37,6 +37,7 @@ ul {
   }
 }
 
+
 .mega-menu {
   width: 100%;
   padding: 0px;
@@ -82,22 +83,26 @@ ul {
 
 
 .search-expansion {
+  position: fixed; // Diventa fissa durante lo scroll
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
   background-color: white;
-  backdrop-filter: blur(20px);
-  height: 60px; // La "linea sotto"
+  z-index: 11;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.1); // Sottile linea di divisione
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   animation: slideDown 0.3s ease-out;
   padding-top: 100px;
 
 
 
   .search-content {
+    display: flex;
     width: 80%;
     max-width: 600px;
-    display: flex;
     align-items: center;
     color: black;
 

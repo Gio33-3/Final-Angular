@@ -19,6 +19,12 @@
   padding: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
+  text-decoration: none;
+  color: black;
+}
+.apple-card:focus {
+  border: 0px;
+  color: black;
 }
 .apple-card:hover {
   transform: scale(1.02);

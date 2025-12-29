@@ -32,14 +32,14 @@
 
 
   <div class="product-slider">
-    <a *ngFor="let p of iphones" class="apple-card" [routerLink]="['/store', p.id]">
+    <a *ngFor="let product of iphones" class="apple-card" [routerLink]="['/store', product.id]">
       <div class="info">
-        <h3>{{ p.title }}</h3>
-        <p class="description">{{ p.description | slice : 0 : 50 }}...</p>
-        <p class="price">${{ p.price }}</p>
+        <h3>{{ product.title }}</h3>
+        <p class="description">{{ product.description | slice : 0 : 50 }}...</p>
+        <p class="price">${{ product.price }}</p>
       </div>
       <div class="image-box">
-        <img [src]="p.thumbnail" [alt]="p.title" />
+        <img [src]="product.thumbnail" [alt]="product.title" />
       </div>
     </a>
   </div>
@@ -48,14 +48,14 @@
 
   <div class="product-slider">
 
-    <a *ngFor="let p of samsungs" class="apple-card" [routerLink]="['/product', p.id]">
+    <a *ngFor="let product of samsungs" class="apple-card" [routerLink]="['/store', product.id]">
       <div class="info">
-        <h3>{{ p.title }}</h3>
-        <p class="description">{{ p.description | slice : 0 : 50 }}...</p>
-        <p class="price">${{ p.price }}</p>
+        <h3>{{ product.title }}</h3>
+        <p class="description">{{ product.description | slice : 0 : 50 }}...</p>
+        <p class="price">${{ product.price }}</p>
       </div>
       <div class="image-box">
-        <img [src]="p.thumbnail" [alt]="p.title" />
+        <img [src]="product.thumbnail" [alt]="product.title" />
       </div>
     </a>
   </div>

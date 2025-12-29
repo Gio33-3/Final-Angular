@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
-
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { FirstSectionComponent } from './first-section/first-section.component';
@@ -37,6 +37,7 @@ import { CarouselModule } from 'primeng/carousel';
     StoreComponent,
     HomeComponent,
     IntroStoreComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,

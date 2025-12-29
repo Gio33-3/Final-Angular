@@ -43,6 +43,9 @@
   color: #0066cc;
   text-decoration: none;
 }
+.a-end:hover {
+  text-decoration: underline;
+}
 
 mat-card-header {
   display: inline;
