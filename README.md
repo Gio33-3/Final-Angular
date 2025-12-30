@@ -13,7 +13,7 @@ This web application is an **Angular**-based project designed to emulate the use
 ## 🛠️ Tech Stack
 
 * **Framework**: Angular 13
-* **UI Components**: Angular Material (Icons, Cards, Toolbar)
+* **UI Components**: Angular Material (Icons, Cards, Toolbar) and Swiper
 * **Styling**: SCSS (SASS) utilizing Flexbox and Grid layouts.
 * **Data Management**: REST API integration via HttpClient Module.
 
