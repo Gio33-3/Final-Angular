@@ -3,6 +3,8 @@
 html,
 body {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -14,6 +16,12 @@ body {
 
 .container-double {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .container-double {
+    flex-direction: row;
+  }
 }

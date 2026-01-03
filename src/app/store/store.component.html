@@ -4,8 +4,8 @@
 <div *ngIf="searchResults.length > 0">
   <h2>Risultati della ricerca</h2>
   <div class="product-slider">
-    <a *ngFor="let product of searchResults" class="apple-card" [routerLink]="['/store', product.id]"> // link dinamico
-      al dettaglio del prodotto
+    <a *ngFor="let product of searchResults" class="apple-card" [routerLink]="['/store', product.id]"> <!-- link dinamico
+      al dettaglio del prodotto-->
       <div class="info">
         <h3>{{ product.title }}</h3>
         <p class="description">{{ product.description | slice : 0 : 50 }}...</p>
