@@ -21,7 +21,7 @@ export class ProductDetailComponent implements OnInit {
     const id = this.route.snapshot.paramMap.get('id');
 
     if (id) {
-      this.appleservice.getProductById(id).subscribe((data) => {
+      this.appleservice.getProductById(id).subscribe((data) => { //risposta API (data) assegnata a this.product
         this.product = data;
       });
     }

@@ -8,44 +8,31 @@
   display: flex;
   justify-content: space-evenly;
   padding: 0px 30px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 30px;
 
 }
 
 .cont-card {
   width: 60px;
   height: 80%;
-
 }
 
 .text-pre-card {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  text-align: end;
-  padding: 50px;
-  align-items: center;
+  text-align: start;
+  padding: 10px 0px 50px 10px;
   width: 100%;
 }
 
 .gradient-text {
   font-size: 80px;
   font-weight: 700;
-
-  /* Creazione della sfumatura */
-  background: linear-gradient(to right,
-      #4a8df3 0%,
-      #4a8df3 30%,
-      #a2717a 50%,
-      #f07e4d 70%,
-      #f07e4d 100%);
-
-  /* Applica la sfumatura solo al testo */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-
-  display: inline-block;
+  margin-bottom: 0px;
+  color: black;
 }
 
 .a-end {
@@ -82,4 +69,20 @@ mat-card-header {
 
 mat-card {
   box-shadow: none !important;
+}
+
+@media (min-width: 768px) {
+
+
+  .text-pre-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: end;
+    padding: 50px;
+    align-items: center;
+    width: 100%;
+  }
+
+
 }

@@ -6,8 +6,6 @@
 }
 
 .star {
-
-
     vertical-align: middle;
     margin-bottom: 5px;
     color: gold;
@@ -19,17 +17,28 @@
 }
 
 
+.title {
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.valutation {
+    padding-left: 10px;
+}
+
 
 .description {
     color: #000000;
     margin-bottom: 5px;
     margin-top: 5px;
+    padding-left: 10px;
 }
 
 .price {
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 15px;
     margin-bottom: 5px;
     margin-top: 5px;
     color: red;
+    padding-left: 10px;
 }

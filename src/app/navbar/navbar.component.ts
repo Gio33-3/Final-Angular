@@ -11,6 +11,7 @@ export class NavbarComponent implements OnInit {
   activeSection: | 'store' | 'mac' | 'ipad' | 'iphone' | 'watch' | 'airpods' | 'tv&casa' | 'intrattenimento' | 'accessori' | 'supporto' | null = null;
   isSearchOpen: boolean = false;
 
+
   constructor(private router: Router) { }
 
   // Funzione per mostrare/nascondere la barra

@@ -6,21 +6,22 @@
   display: flex;
   overflow-x: auto;
   gap: 30px;
-  padding: 40px 20px;
   scroll-behavior: smooth;
   overflow-y: auto;
 }
 
 .apple-card {
-  flex: 0 0 300px; // Impedisce alle card di rimpicciolirsi
+  flex-grow: 0; // 0: Non deve crescere per riempire lo spazio vuoto
+  flex-shrink: 0; // 0: NON deve restringersi (obbliga il browser a creare lo scroll orizzontale)
+  flex-basis: 300px; // 300px: Larghezza fissa iniziale di ogni card
   scroll-snap-align: start; // Punto dove la card si "aggancia" allo scorrimento
-  background: #ffffff;
+  background: #000000;
   border-radius: 20px;
   padding: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
 
   &:focus {
     border: 0px;
@@ -63,7 +64,7 @@
     }
 
     .description {
-      color: #000000;
+      color: white;
       font-size: 0.9rem;
       margin-bottom: 5px;
       margin-top: 5px;
@@ -103,19 +104,16 @@ p {
 .gradient-text {
   font-weight: 700;
   margin-right: 5px;
-  /* Creazione della sfumatura */
-  background: linear-gradient(to right,
-      #4a8df3 0%,
-      #4a8df3 30%,
-      #a2717a 50%,
-      #f07e4d 70%,
-      #f07e4d 100%);
+  color: black;
+}
 
-  /* Applica la sfumatura solo al testo */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-
-  display: inline-block;
+@media (min-width: 768px) {
+  .product-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 30px;
+    padding: 40px 20px;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+  }
 }

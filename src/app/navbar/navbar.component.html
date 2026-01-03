@@ -43,7 +43,7 @@
   </div>
 
 
-  <div class="mega-menu" [class.is-active]="activeSection">
+  <div class="mega-menu" [class.is-active]="activeSection" (click)="activeSection = null; isSearchOpen = false">
     <div>
       <div class="container" *ngIf="activeSection === 'store'">
         <div class="mar-content">
