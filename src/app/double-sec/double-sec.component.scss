@@ -7,8 +7,6 @@ p {
   margin: 5px 0px 10px 5px;
 }
 
-
-
 .container {
   display: grid;
   place-items: center;
@@ -86,15 +84,10 @@ a {
   text-decoration: none;
 }
 
-
 @media(min-width: 1024px) {
 
-  .container {
-    height: 50vh;
-  }
-
   .text-up p {
-    font-size: 18px;
+    font-size: 17px;
     margin: 5px 15px 10px 15px;
   }
 

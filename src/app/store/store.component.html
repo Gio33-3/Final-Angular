@@ -1,7 +1,7 @@
 <app-intro-store></app-intro-store>
 
 <!-- Controllo se la ricerca è maggiore di 0, cioè ha trovato risultati -->
-<div *ngIf="searchResults.length > 0">
+<div *ngIf="searchResults.length > 0" class="store-container">
   <h2>Risultati della ricerca</h2>
   <div class="product-slider">
     <a *ngFor="let product of searchResults" class="apple-card" [routerLink]="['/store', product.id]"> <!-- link dinamico

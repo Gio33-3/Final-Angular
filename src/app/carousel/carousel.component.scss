@@ -109,7 +109,6 @@
 @media (min-width: 1024px) {
 
   .swiper {
-    width: 85%;
     padding-top: 20px;
     padding-bottom: 40px;
   }
@@ -118,6 +117,7 @@
   .img-mobile {
     display: none;
   }
+
 
   .img-desk {
     display: inline;
@@ -129,11 +129,12 @@
   .text-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     position: absolute; // "Sgancia" il testo dal flusso e lo mette sopra l'immagine
     bottom: 40px; // Lo spinge in basso
     left: 40px;
     color: white;
+
 
     .p-bold {
       font-weight: bold;
@@ -142,6 +143,8 @@
     p {
       padding-left: 10px;
       font-size: 18px;
+      align-self: center;
+
     }
 
     .but-white {

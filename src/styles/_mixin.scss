@@ -96,6 +96,7 @@
 
 @media (min-width: 1024px) {
 
+
   .pad-top-title {
     padding-top: 20px;
   }
@@ -113,21 +114,24 @@
     display: none;
   }
 
-  h1 {
-    font-size: 56px;
-    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
-      "Arial", sans-serif;
-    margin: 0;
-    padding-top: 30px;
+  .container {
+    h1 {
+      font-size: 56px;
+      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+        "Arial", sans-serif;
+      margin: 0;
+      padding-top: 30px;
+    }
+
+    h4 {
+      font-size: 26px;
+      font-weight: 400;
+      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+        "Arial", sans-serif;
+      margin: 0;
+    }
   }
 
-  h4 {
-    font-size: 26px;
-    font-weight: 400;
-    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
-      "Arial", sans-serif;
-    margin: 0;
-  }
 
 
 }

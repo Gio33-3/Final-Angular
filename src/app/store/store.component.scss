@@ -46,6 +46,11 @@
     }
   }
 
+  .store-container {
+    display: flex;
+    justify-content: center;
+  }
+
   .info {
     margin-top: 10px;
     text-align: start;
