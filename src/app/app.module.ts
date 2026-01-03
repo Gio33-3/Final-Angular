@@ -22,6 +22,10 @@ import { HomeComponent } from './home/home.component';
 import { IntroStoreComponent } from './intro-store/intro-store.component';
 import { MatCardModule } from '@angular/material/card';
 import { CarouselModule } from 'primeng/carousel';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -44,6 +48,10 @@ import { CarouselModule } from 'primeng/carousel';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
+    MatMenuModule,
+    MatExpansionModule,
+    MatListModule,
+    MatSidenavModule,
     MatIconModule,
     SwiperModule,
     MatCardModule,

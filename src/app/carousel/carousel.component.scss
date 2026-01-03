@@ -5,6 +5,7 @@
 
 .swiper {
   width: 85%;
+  height: 100vh;
   padding-top: 20px;
   padding-bottom: 40px;
 }
@@ -29,13 +30,18 @@
   position: relative;
   width: 100%;
   height: 100%;
+}
 
-  img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+.img-mobile {
+  display: inline;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.img-desk {
+  display: none;
+
 }
 
 .gradient-overlay {
@@ -47,53 +53,112 @@
   /* Copre solo la metà inferiore */
 
   /* Dal nero semitrasparente in basso al trasparente in alto */
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.7) 0%,
-    rgba(0, 0, 0, 0.3) 50%,
-    transparent 100%
-  );
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0.3) 50%,
+      transparent 100%);
 
   z-index: 0;
   pointer-events: none;
 }
 
 .text-container {
+  width: 100%;
+  text-align: center;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   position: absolute; // "Sgancia" il testo dal flusso e lo mette sopra l'immagine
-  bottom: 40px; // Lo spinge in basso
-  left: 40px;
+  bottom: 30px; // Lo spinge in basso
   color: white;
 
   .p-bold {
     font-weight: bold;
+    margin: 10px;
+    text-align: center;
   }
 
+
   p {
-    padding-left: 10px;
-    font-size: 18px;
+    font-size: 15px;
+    margin: 0px;
+
   }
 
   .but-white {
+    align-self: center;
+    width: 130px;
     background-color: whitesmoke;
-    font-size: 16px;
+    font-size: 14px;
     color: black;
     border-radius: 30px;
     margin: 0;
     text-decoration: none;
-    padding: 0px 30px 0px 30px;
-
-    display: inline-flex; // Permette al bottone di stare in riga ma essere flessibile
+    padding: 10px 20px 10px 20px;
+    text-align: center;
     align-items: center; // Centra verticalmente
-
-    &:hover {
-      background-color: white;
-    }
   }
 }
-.swiper-button-prev,
-.swiper-button-next {
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
   color: #555555 !important;
+  font-size: 30px !important;
+}
+
+@media (min-width: 1024px) {
+
+  .swiper {
+    width: 85%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+
+  .img-mobile {
+    display: none;
+  }
+
+  .img-desk {
+    display: inline;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute; // "Sgancia" il testo dal flusso e lo mette sopra l'immagine
+    bottom: 40px; // Lo spinge in basso
+    left: 40px;
+    color: white;
+
+    .p-bold {
+      font-weight: bold;
+    }
+
+    p {
+      padding-left: 10px;
+      font-size: 18px;
+    }
+
+    .but-white {
+      background-color: whitesmoke;
+      font-size: 16px;
+      color: black;
+      border-radius: 30px;
+      margin: 0;
+      text-decoration: none;
+      padding: 0px 30px 0px 30px;
+
+      display: inline-flex; // Permette al bottone di stare in riga ma essere flessibile
+      align-items: center; // Centra verticalmente
+
+      &:hover {
+        background-color: white;
+      }
+    }
+  }
 }
