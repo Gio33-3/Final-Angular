@@ -1,4 +1,4 @@
-// Importazione stili base (se non li hai messi in styles.scss)
+// Importazione stili base di Swiper e moduli necessari
 @import "swiper/scss";
 @import "swiper/scss/navigation";
 @import "swiper/scss/pagination";
@@ -153,7 +153,6 @@
       margin: 0;
       text-decoration: none;
       padding: 0px 30px 0px 30px;
-
       display: inline-flex; // Permette al bottone di stare in riga ma essere flessibile
       align-items: center; // Centra verticalmente
 

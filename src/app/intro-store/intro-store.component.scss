@@ -11,7 +11,6 @@
   overflow-x: auto;
   scroll-behavior: smooth;
   gap: 30px;
-
 }
 
 .cont-card {
@@ -63,8 +62,6 @@ mat-card-header {
     margin-bottom: 0px;
     font-size: 14px;
   }
-
-
 }
 
 mat-card {
@@ -72,7 +69,6 @@ mat-card {
 }
 
 @media (min-width: 768px) {
-
 
   .text-pre-card {
     display: flex;
@@ -83,6 +79,4 @@ mat-card {
     align-items: center;
     width: 100%;
   }
-
-
 }

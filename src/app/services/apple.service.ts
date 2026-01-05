@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-@Injectable({ providedIn: 'root' })
+@Injectable({ providedIn: 'root' })//Indica che questa classe può essere "iniettata" in altri componenti o servizi.
 export class AppleService {
   // URL di DummyJSON per cercare prodotti
   private url = 'https://dummyjson.com/products';

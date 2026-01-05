@@ -80,10 +80,8 @@ ul {
   }
 }
 
-
-
 .search-expansion {
-  position: fixed; // Diventa fissa durante lo scroll
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -96,7 +94,6 @@ ul {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   animation: slideDown 0.3s ease-out;
   padding-top: 40px;
-
 
 
   .search-content {
