@@ -30,6 +30,18 @@ export class NavbarComponent implements OnInit {
     }
   }
 
+
+isMenuOpen: boolean = false;
+
+//gestisce lo stato di apertura del menu mobile.
+  toggleMenu() {
+  this.isMenuOpen = !this.isMenuOpen;
+  if (this.isMenuOpen) {
+    this.isSearchOpen = false; // Chiude la ricerca se apri il menu
+    this.activeSection = null;
+  }
+}
+
   ngOnInit(): void {
   }
 

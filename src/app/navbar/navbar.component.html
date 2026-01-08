@@ -1,51 +1,91 @@
 <div (mouseleave)="activeSection = null; isSearchOpen = false">
-
   <mat-toolbar class="apple-nav">
-    <ul class="nav-list">
+    <div class="mobile-menu-btn" (click)="toggleMenu()">
+      <mat-icon>{{ isMenuOpen ? "close" : "menu" }}</mat-icon>
+    </div>
 
-      <li>
-        <a (mouseenter)="activeSection = null" routerLink="/" class="nav-link">
+    <ul class="nav-list" [class.mobile-open]="isMenuOpen">
+      <li class="logo-item">
+        <a
+          (mouseenter)="activeSection = null"
+          routerLink="/"
+          class="nav-link"
+          (click)="isMenuOpen = false"
+        >
           <mat-icon>apple</mat-icon>
         </a>
       </li>
 
-      <li (mouseenter)="activeSection = 'store'"><a routerLink="/store" class="nav-link">Store</a></li>
-      <li (mouseenter)="activeSection = 'mac'"><a href="" class="nav-link">Mac</a></li>
-      <li (mouseenter)="activeSection = 'ipad'"><a href="" class="nav-link">iPad</a></li>
-      <li (mouseenter)="activeSection = 'iphone'"><a href="" class="nav-link">iPhone</a></li>
-      <li (mouseenter)="activeSection = 'watch'"><a href="" class="nav-link">Watch</a></li>
-      <li (mouseenter)="activeSection = 'airpods'"><a href="" class="nav-link">AirPods</a></li>
-      <li (mouseenter)="activeSection = 'tv&casa'"><a href="" class="nav-link">TV & Casa</a></li>
-      <li (mouseenter)="activeSection = 'intrattenimento'"><a href="" class="nav-link">Intrattenimento</a></li>
-      <li (mouseenter)="activeSection = 'supporto'"><a href="" class="nav-link">Supporto</a></li>
-
-      <li>
-        <a class="nav-link search-fix" (click)="toggleSearch()" (mouseenter)="activeSection = null">
-          <mat-icon>search</mat-icon>
-        </a>
+      <li class="nav-item" (mouseenter)="activeSection = 'store'">
+        <a routerLink="/store" class="nav-link" (click)="isMenuOpen = false"
+          >Store</a
+        >
+      </li>
+      <li class="nav-item" (mouseenter)="activeSection = 'mac'">
+        <a href="" class="nav-link">Mac</a>
+      </li>
+      <li class="nav-item" (mouseenter)="activeSection = 'ipad'">
+        <a href="" class="nav-link">iPad</a>
+      </li>
+      <li class="nav-item" (mouseenter)="activeSection = 'iphone'">
+        <a href="" class="nav-link">iPhone</a>
+      </li>
+      <li class="nav-item" (mouseenter)="activeSection = 'watch'">
+        <a href="" class="nav-link">Watch</a>
+      </li>
+      <li class="nav-item" (mouseenter)="activeSection = 'airpods'">
+        <a href="" class="nav-link">AirPods</a>
+      </li>
+      <li class="nav-item" (mouseenter)="activeSection = 'tv&casa'">
+        <a href="" class="nav-link">TV & Casa</a>
+      </li>
+      <li class="nav-item" (mouseenter)="activeSection = 'intrattenimento'">
+        <a href="" class="nav-link">Intrattenimento</a>
+      </li>
+      <li class="nav-item" (mouseenter)="activeSection = 'supporto'">
+        <a href="" class="nav-link">Supporto</a>
       </li>
 
-      <li>
-        <a href="" class="nav-link" (mouseenter)="activeSection = null">
+      <li class="icons-item">
+        <a
+          class="nav-link search-fix"
+          (click)="toggleSearch(); isMenuOpen = false"
+          (mouseenter)="activeSection = null"
+        >
+          <mat-icon>search</mat-icon>
+        </a>
+        <a
+          href=""
+          class="nav-link bag-icon"
+          (mouseenter)="activeSection = null"
+        >
           <mat-icon>shopping_bag</mat-icon>
         </a>
       </li>
-
     </ul>
-
   </mat-toolbar>
 
   <div class="search-expansion" *ngIf="isSearchOpen">
     <div class="search-content">
       <mat-icon>search</mat-icon>
-      <input type="text" placeholder="Cerca su apple.com" (keyup.enter)="doSearch($event)" #searchInput
-        autocomplete="off">
-      <mat-icon class="close-icon" (click)="isSearchOpen = false">close</mat-icon>
+      <input
+        type="text"
+        placeholder="Cerca su apple.com"
+        (keyup.enter)="doSearch($event)"
+        #searchInput
+        autocomplete="off"
+      />
+      <mat-icon class="close-icon" (click)="isSearchOpen = false"
+        >close</mat-icon
+      >
     </div>
   </div>
 
-
-  <div class="mega-menu" [class.is-active]="activeSection" (click)="activeSection = null; isSearchOpen = false">
+  <div
+    class="mega-menu hide-on-mobile"
+    [class.is-active]="activeSection"
+    (click)="activeSection = null; isSearchOpen = false"
+  >
     <div>
       <div class="container" *ngIf="activeSection === 'store'">
         <div class="mar-content">
@@ -135,7 +175,9 @@
             <li><a class="a-pri" href="">iPad mini</a></li>
             <li><a class="a-pri" href="">Apple Pencil</a></li>
             <li><a class="a-pri" href="">Tastiere</a></li>
-            <li class="li-sec"><a class="a-sec" href="">iPad a confronto</a></li>
+            <li class="li-sec">
+              <a class="a-sec" href="">iPad a confronto</a>
+            </li>
           </ul>
         </div>
 
@@ -276,7 +318,6 @@
         </div>
       </div>
 
-
       <div class="container" *ngIf="activeSection === 'tv&casa'">
         <div class="mar-content">
           <p>TV & Casa</p>
@@ -296,7 +337,6 @@
             <li><a class="a-sec" href="">Acquista HomePod Mini</a></li>
             <li><a class="a-sec" href="">Acquista Siri Remote</a></li>
             <li><a class="a-sec" href="">Accessori TV & Casa</a></li>
-
           </ul>
         </div>
 
@@ -316,12 +356,15 @@
         </div>
       </div>
 
-
       <div class="container" *ngIf="activeSection === 'intrattenimento'">
         <div class="mar-content">
           <p>Intrattenimento</p>
           <ul>
-            <li><a class="a-pri" href="">Scopri i servixi per l'intrattenimento </a></li>
+            <li>
+              <a class="a-pri" href=""
+                >Scopri i servixi per l'intrattenimento
+              </a>
+            </li>
             <li><a class="a-pri" href="">Apple One</a></li>
             <li><a class="a-pri" href="">Apple TV</a></li>
             <li><a class="a-pri" href="">Apple Music</a></li>
@@ -330,7 +373,6 @@
             <li><a class="a-pri" href="">Apple Podcasts</a></li>
             <li><a class="a-pri" href="">Apple Books</a></li>
             <li><a class="a-pri" href="">App Store</a></li>
-
           </ul>
         </div>
 
@@ -404,8 +446,6 @@
           </ul>
         </div>
       </div>
-
-
     </div>
   </div>
 </div>
