@@ -93,7 +93,7 @@
     height: auto;
   }
   .img-first-mobile {
-    width: 70%;
+    width: 50%;
   }
 }
 @media (min-width: 1024px) {
@@ -139,7 +139,7 @@
     width: 100%;
   }
   .img-first {
-    width: 70%;
+    width: 40%;
     height: auto;
   }
 }
