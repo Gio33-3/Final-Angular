@@ -1,6 +1,6 @@
 .pad-double-sec {
   padding: 5px;
-  height: 100vh;
+  height: 50vh;
 }
 
 .sect-reverse {
@@ -10,13 +10,25 @@
   }
 }
 
-@media(min-width: 1024px) {
+@media (min-width: 768px) {
   .pad-double-sec {
-    height: 70vh;
+    height: 40vh;
   }
 }
 
-@media(min-width: 1440px) {
+@media (min-width: 1024px) {
+  .pad-double-sec {
+    height: 30vh;
+  }
+}
+
+@media (min-width: 1440px) {
+  .pad-double-sec {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 2560px) {
   .pad-double-sec {
     height: 50vh;
   }
