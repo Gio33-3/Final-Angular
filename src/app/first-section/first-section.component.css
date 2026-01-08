@@ -10,7 +10,7 @@
 }
 
 .container,
-.container-video {
+.container-video-gen {
   width: 100%;
   background-color: #f5f5f5;
   text-align: center;
@@ -21,18 +21,18 @@
   justify-content: center;
 }
 .container a,
-.container-video a {
+.container-video-gen a {
   text-decoration: none;
 }
 .container h1,
-.container-video h1 {
+.container-video-gen h1 {
   font-size: 20px;
   font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   margin: 0;
   padding-top: 20px;
 }
 .container h4,
-.container-video h4 {
+.container-video-gen h4 {
   font-size: 17px;
   font-weight: 400;
   font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -101,7 +101,7 @@
     padding-top: 20px;
   }
   .img-first {
-    width: 60%;
+    max-width: 40%;
   }
   .img-first-desk {
     display: block;
@@ -113,15 +113,18 @@
   .img-first-mobile {
     display: none;
   }
+  .container-video-gen {
+    height: 65vh;
+  }
   .container h1,
-  .container-video h1 {
+  .container-video-gen h1 {
     font-size: 56px;
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     margin: 0;
     padding-top: 30px;
   }
   .container h4,
-  .container-video h4 {
+  .container-video-gen h4 {
     font-size: 26px;
     font-weight: 400;
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -129,8 +132,8 @@
   }
 }
 @media (min-width: 1440px) {
-  .container-video {
-    height: 80vh;
+  .container-video-gen {
+    height: 75vh;
   }
   .container {
     height: 50vh;
@@ -139,13 +142,13 @@
     width: 100%;
   }
   .img-first {
-    width: 40%;
+    max-width: 30%;
     height: auto;
   }
 }
 @media (min-width: 2560px) {
-  .container-video {
-    height: 70vh;
+  .container-video-gen {
+    height: 65vh;
   }
   .container {
     height: 60vh;
