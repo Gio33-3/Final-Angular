@@ -9,27 +9,30 @@
   padding-top: 10px;
 }
 
-.container {
+.container,
+.container-video {
   width: 100%;
   background-color: #f5f5f5;
   text-align: center;
   margin-bottom: 10px;
-  min-height: 100vh;
-  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.container a {
+.container a,
+.container-video a {
   text-decoration: none;
 }
-.container h1 {
+.container h1,
+.container-video h1 {
   font-size: 20px;
   font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   margin: 0;
   padding-top: 20px;
 }
-.container h4 {
+.container h4,
+.container-video h4 {
   font-size: 17px;
   font-weight: 400;
   font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -88,6 +91,10 @@
   .pad-top-title {
     padding-top: 30px;
   }
+  .img-first {
+    width: 70%;
+    height: auto;
+  }
 }
 @media (min-width: 1024px) {
   .pad-top-title {
@@ -103,16 +110,33 @@
   .img-first-mobile {
     display: none;
   }
-  .container h1 {
+  .container h1,
+  .container-video h1 {
     font-size: 56px;
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     margin: 0;
     padding-top: 30px;
   }
-  .container h4 {
+  .container h4,
+  .container-video h4 {
     font-size: 26px;
     font-weight: 400;
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     margin: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .container-video {
+    height: 90vh;
+  }
+  .container {
+    height: 70vh;
+  }
+  .img-first-desk {
+    width: 70%;
+  }
+  .img-first {
+    width: 70%;
+    height: auto;
   }
 }/*# sourceMappingURL=therd-section.component.css.map */

@@ -97,4 +97,9 @@ a {
   .container {
     height: 70vh;
   }
+}
+@media (min-width: 1440px) {
+  .container {
+    height: 50vh;
+  }
 }/*# sourceMappingURL=double-sec.component.css.map */
