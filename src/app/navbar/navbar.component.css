@@ -1,73 +1,96 @@
-li {
-  list-style: none;
-  padding-top: 0px;
-}
-li mat-icon {
-  padding-top: 5px;
-}
-
 ul {
   padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu-btn,
+.mobile-logo,
+.mobile-icons {
+  display: none;
+}
+
+.logo-item,
+.icons-item {
+  display: block;
+  margin-top: 5px;
 }
 
 .apple-nav {
-  justify-content: space-around;
   position: fixed;
-  z-index: 10;
-  padding: 5px !important;
-  background-color: rgba(255, 255, 255, 0.761);
+  top: 0;
+  width: 100%;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s;
 }
 .apple-nav .nav-list {
-  width: 100%;
-  list-style: none;
   display: flex;
-  flex-direction: column;
-  justify-content: stretch;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
 }
-.apple-nav button {
-  border: 0px !important;
-  background-color: transparent;
+.apple-nav .nav-item {
+  display: flex;
+  align-items: center;
 }
 .apple-nav .nav-link {
-  color: rgb(74, 74, 74);
+  color: #424245;
   text-decoration: none;
   font-size: 12px;
+  transition: opacity 0.2s;
+  cursor: pointer;
+  gap: 10px;
+}
+.apple-nav .nav-link:hover {
+  opacity: 0.7;
+}
+.apple-nav button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
 }
 
 .mega-menu {
   width: 100%;
-  padding: 0px;
-  margin: 0px;
-  background-color: #f5f5f5;
+  background-color: rgb(255, 255, 255);
   position: fixed;
+  top: 48px;
   z-index: 2;
+  display: block;
 }
 .mega-menu .container {
-  padding: 50px;
+  padding: 25px;
   display: flex;
 }
 .mega-menu .container .mar-content {
   padding-left: 50px;
   padding-top: 30px;
 }
-.mega-menu p {
-  margin: 0;
-  color: grey;
-  font-size: 14px;
-}
 .mega-menu .a-pri {
   text-decoration: none;
   font-size: 24px;
   color: #333336;
   font-weight: bold;
+  display: block;
 }
 .mega-menu .a-sec {
   font-size: 12px;
   color: #333336;
   text-decoration: none;
 }
-.mega-menu .li-sec {
-  padding-top: 20px;
+.mega-menu p {
+  margin: 5px 0;
+  color: grey;
+  font-size: 14px;
 }
 
 .search-expansion {
@@ -77,39 +100,25 @@ ul {
   width: 100%;
   height: 60px;
   background-color: white;
-  z-index: 11;
+  z-index: 110;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   animation: slideDown 0.3s ease-out;
-  padding-top: 40px;
 }
 .search-expansion .search-content {
   display: flex;
   width: 80%;
   max-width: 600px;
   align-items: center;
-  color: black;
 }
 .search-expansion .search-content input {
-  background: transparent;
   border: none;
-  color: black;
   font-size: 1.2rem;
   width: 100%;
   margin: 0 15px;
   outline: none;
-}
-.search-expansion .search-content .nav-link,
-.search-expansion .search-content mat-icon,
-.search-expansion .search-content .close-icon {
-  cursor: pointer;
-}
-.search-expansion .search-content .nav-link:hover,
-.search-expansion .search-content mat-icon:hover,
-.search-expansion .search-content .close-icon:hover {
-  opacity: 1;
 }
 
 @keyframes slideDown {
@@ -122,75 +131,69 @@ ul {
     opacity: 1;
   }
 }
-@media (min-width: 1200px) {
-  .nav-list {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-}
-@media (min-width: 1400px) {
-  .nav-list {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-}
-.apple-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 48px; /* Altezza standard Apple */
-  background-color: rgba(255, 255, 255, 0.8);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-  z-index: 100;
-  display: flex;
-  align-items: center;
-}
-
-.nav-list {
-  display: flex;
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  padding: 0 20px;
-}
-
-.mobile-menu-btn {
-  display: none;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .mobile-menu-btn {
     display: block;
     cursor: pointer;
     z-index: 101;
-    color: #424245;
+    color: #353535;
+    margin-top: 5px;
+  }
+  .mobile-logo {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #353535;
+    z-index: 2;
+    margin-top: 5px;
+  }
+  .mobile-logo mat-icon {
+    font-size: 25px;
+    width: 20px;
+    height: 20px;
+  }
+  .mobile-icons {
+    display: flex;
+    gap: 10px;
+    z-index: 2;
+  }
+  .mobile-icons a {
+    color: #353535;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .mobile-icons mat-icon {
+    font-size: 22px;
+    width: 20px;
+    height: 20px;
+    gap: 10px;
+  }
+  .apple-nav {
+    justify-content: space-between;
+    padding: 0 15px !important;
   }
   .nav-list {
     position: fixed;
-    top: 48px; /* Sotto la barra */
+    top: 48px;
     left: 0;
     width: 100%;
-    height: 0; /* Chiuso di base */
+    height: 0;
     background: white;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    overflow: hidden;
-    transition: height 0.3s ease-in-out;
+    overflow-y: auto;
+    transition: height 0.3s ease-in-out, padding 0.3s;
     padding: 0;
-    z-index: 99;
   }
   .nav-list.mobile-open {
-    height: 100vh; /* Apre a tutto schermo */
-    padding: 40px;
+    height: calc(100vh - 48px);
+    padding: 20px 40px;
   }
-  .nav-list .logo-item {
-    display: none;
-  }
+  .nav-list .logo-item,
   .nav-list .icons-item {
     display: none;
   }
@@ -201,32 +204,29 @@ ul {
   .nav-list .nav-item .nav-link {
     display: block;
     padding: 15px 0;
-    font-size: 28px; /* Font grande stile Apple mobile */
+    font-size: 24px;
     font-weight: 600;
-    color: #1d1d1f;
-  }
-  .apple-nav {
-    justify-content: space-between;
-    padding: 0 15px !important;
-  }
-  .apple-nav::after {
-    content: "apple";
-    font-family: "Material Icons";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 22px;
-  }
-  .mega-menu {
-    display: none !important;
+    color: #353535;
   }
 }
-/* Fix per icone borsa e ricerca su mobile (sempre visibili) */
-.bag-icon-mobile {
-  display: none;
+@media (min-width: 767px) {
+  .mobile-menu-btn {
+    display: none;
+  }
 }
-@media (max-width: 768px) {
-  .bag-icon-mobile {
-    display: block;
+@media (min-width: 1200px) {
+  .nav-list {
+    max-width: 1000px;
+  }
+}
+@media (min-width: 2500px) {
+  .a-pri {
+    font-size: 30px;
+  }
+  .a-sec {
+    font-size: 18px;
+  }
+  p {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=navbar.component.css.map */

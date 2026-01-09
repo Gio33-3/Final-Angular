@@ -1,25 +1,23 @@
 <div (mouseleave)="activeSection = null; isSearchOpen = false">
   <mat-toolbar class="apple-nav">
+
     <div class="mobile-menu-btn" (click)="toggleMenu()">
       <mat-icon>{{ isMenuOpen ? "close" : "menu" }}</mat-icon>
     </div>
 
+    <a class="mobile-logo" routerLink="/" (click)="isMenuOpen = false">
+      <mat-icon>apple</mat-icon>
+    </a>
+
     <ul class="nav-list" [class.mobile-open]="isMenuOpen">
       <li class="logo-item">
-        <a
-          (mouseenter)="activeSection = null"
-          routerLink="/"
-          class="nav-link"
-          (click)="isMenuOpen = false"
-        >
+        <a (mouseenter)="activeSection = null" routerLink="/" class="nav-link" (click)="isMenuOpen = false">
           <mat-icon>apple</mat-icon>
         </a>
       </li>
 
       <li class="nav-item" (mouseenter)="activeSection = 'store'">
-        <a routerLink="/store" class="nav-link" (click)="isMenuOpen = false"
-          >Store</a
-        >
+        <a routerLink="/store" class="nav-link" (click)="activeSection = null; isMenuOpen = false">Store</a>
       </li>
       <li class="nav-item" (mouseenter)="activeSection = 'mac'">
         <a href="" class="nav-link">Mac</a>
@@ -47,45 +45,39 @@
       </li>
 
       <li class="icons-item">
-        <a
-          class="nav-link search-fix"
-          (click)="toggleSearch(); isMenuOpen = false"
-          (mouseenter)="activeSection = null"
-        >
+        <a class="nav-link search-fix" (click)="toggleSearch(); isMenuOpen = false" (mouseenter)="activeSection = null">
           <mat-icon>search</mat-icon>
         </a>
-        <a
-          href=""
-          class="nav-link bag-icon"
-          (mouseenter)="activeSection = null"
-        >
+      </li>
+      <li class="icons-item">
+        <a href="" class="nav-link bag-icon" (mouseenter)="activeSection = null">
           <mat-icon>shopping_bag</mat-icon>
         </a>
       </li>
     </ul>
+
+    <div class="mobile-icons">
+      <a (click)="toggleSearch()">
+        <mat-icon>search</mat-icon>
+      </a>
+      <a href="">
+        <mat-icon>shopping_bag</mat-icon>
+      </a>
+    </div>
+
   </mat-toolbar>
 
   <div class="search-expansion" *ngIf="isSearchOpen">
     <div class="search-content">
       <mat-icon>search</mat-icon>
-      <input
-        type="text"
-        placeholder="Cerca su apple.com"
-        (keyup.enter)="doSearch($event)"
-        #searchInput
-        autocomplete="off"
-      />
-      <mat-icon class="close-icon" (click)="isSearchOpen = false"
-        >close</mat-icon
-      >
+      <input type="text" placeholder="Cerca su apple.com" (keyup.enter)="doSearch($event)" #searchInput
+        autocomplete="off" />
+      <mat-icon class="close-icon" (click)="isSearchOpen = false">close</mat-icon>
     </div>
   </div>
 
-  <div
-    class="mega-menu hide-on-mobile"
-    [class.is-active]="activeSection"
-    (click)="activeSection = null; isSearchOpen = false"
-  >
+  <div class="mega-menu hide-on-mobile" [class.is-active]="activeSection"
+    (click)="activeSection = null; isSearchOpen = false">
     <div>
       <div class="container" *ngIf="activeSection === 'store'">
         <div class="mar-content">
@@ -361,8 +353,7 @@
           <p>Intrattenimento</p>
           <ul>
             <li>
-              <a class="a-pri" href=""
-                >Scopri i servixi per l'intrattenimento
+              <a class="a-pri" href="">Scopri i servixi per l'intrattenimento
               </a>
             </li>
             <li><a class="a-pri" href="">Apple One</a></li>

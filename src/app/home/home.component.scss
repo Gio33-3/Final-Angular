@@ -1,7 +1,13 @@
 .pad-double-sec {
   padding: 5px;
-  height: 50vh;
 }
+
+.container-double {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
 
 .sect-reverse {
   .text-up {
@@ -12,24 +18,36 @@
 
 @media (min-width: 768px) {
   .pad-double-sec {
-    height: 40vh;
+    height: 100%;
   }
+
+  .container-double {
+    height: 400px;
+    padding-top: 10px;
+  }
+
 }
 
 @media (min-width: 1024px) {
   .pad-double-sec {
-    height: 40vh;
+    height: 100%;
   }
+
+  .container-double {
+    height: 400px;
+    padding-top: 10px;
+  }
+
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 2500px) {
   .pad-double-sec {
-    height: 55vh;
+    height: 100%;
   }
-}
 
-@media (min-width: 2560px) {
-  .pad-double-sec {
-    height: 50vh;
+  .container-double {
+    height: 700px;
+    padding-top: 10px;
   }
+
 }
