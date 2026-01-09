@@ -165,42 +165,11 @@ h4 {
 
   h4 {
     font-size: 25px;
-    font-weight: 400;
-    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin: 0 0 20px 0;
   }
 
   .but-per {
-    border-radius: 99px;
     padding: 20px;
-    background-color: #0071e3;
-    color: white;
-    border: none;
-    font-size: 17px;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-
-    &:hover {
-      background-color: #0077ED;
-      color: white;
-    }
   }
-
-  .but-white {
-    @extend .but-per;
-    background-color: transparent;
-    color: #0071e3;
-    border: 1px solid #0071e3;
-
-    &:hover {
-      background-color: #0071e3;
-      color: white;
-    }
-  }
-
-
-
 
 
   .product-img-thi {
